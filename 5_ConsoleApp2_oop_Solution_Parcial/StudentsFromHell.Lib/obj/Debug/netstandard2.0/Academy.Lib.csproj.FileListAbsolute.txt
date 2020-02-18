@@ -1,0 +1,8 @@
+C:\Dev\NetExamples\trainingexample1_averagemarks\ConsoleApp2_oop_Solution\StudentsFromHell.Lib\bin\Debug\netstandard2.0\Academy.Lib.deps.json
+C:\Dev\NetExamples\trainingexample1_averagemarks\ConsoleApp2_oop_Solution\StudentsFromHell.Lib\bin\Debug\netstandard2.0\Academy.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\ConsoleApp2_oop_Solution\StudentsFromHell.Lib\bin\Debug\netstandard2.0\Academy.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\ConsoleApp2_oop_Solution\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.csprojAssemblyReference.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\ConsoleApp2_oop_Solution\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.AssemblyInfoInputs.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\ConsoleApp2_oop_Solution\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.AssemblyInfo.cs
+C:\Dev\NetExamples\trainingexample1_averagemarks\ConsoleApp2_oop_Solution\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\ConsoleApp2_oop_Solution\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.pdb

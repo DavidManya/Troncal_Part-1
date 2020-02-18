@@ -1,0 +1,10 @@
+C:\Users\dmany\Desktop\TrainingExample1_AverageMarks\4_ConsoleApp2_oop_Propuesta1_DbContext\StudentsFromHell.Lib\bin\Debug\netstandard2.0\StudentsFromHell.Lib.deps.json
+C:\Users\dmany\Desktop\TrainingExample1_AverageMarks\4_ConsoleApp2_oop_Propuesta1_DbContext\StudentsFromHell.Lib\bin\Debug\netstandard2.0\StudentsFromHell.Lib.dll
+C:\Users\dmany\Desktop\TrainingExample1_AverageMarks\4_ConsoleApp2_oop_Propuesta1_DbContext\StudentsFromHell.Lib\obj\Debug\netstandard2.0\StudentsFromHell.Lib.csprojAssemblyReference.cache
+C:\Users\dmany\Desktop\TrainingExample1_AverageMarks\4_ConsoleApp2_oop_Propuesta1_DbContext\StudentsFromHell.Lib\obj\Debug\netstandard2.0\StudentsFromHell.Lib.AssemblyInfoInputs.cache
+C:\Users\dmany\Desktop\TrainingExample1_AverageMarks\4_ConsoleApp2_oop_Propuesta1_DbContext\StudentsFromHell.Lib\obj\Debug\netstandard2.0\StudentsFromHell.Lib.AssemblyInfo.cs
+C:\Users\dmany\Desktop\Troncal\4_ConsoleApp2_oop_Propuesta1_DbContext\StudentsFromHell.Lib\bin\Debug\netstandard2.0\StudentsFromHell.Lib.deps.json
+C:\Users\dmany\Desktop\Troncal\4_ConsoleApp2_oop_Propuesta1_DbContext\StudentsFromHell.Lib\bin\Debug\netstandard2.0\StudentsFromHell.Lib.dll
+C:\Users\dmany\Desktop\Troncal\4_ConsoleApp2_oop_Propuesta1_DbContext\StudentsFromHell.Lib\obj\Debug\netstandard2.0\StudentsFromHell.Lib.csprojAssemblyReference.cache
+C:\Users\dmany\Desktop\Troncal\4_ConsoleApp2_oop_Propuesta1_DbContext\StudentsFromHell.Lib\obj\Debug\netstandard2.0\StudentsFromHell.Lib.AssemblyInfoInputs.cache
+C:\Users\dmany\Desktop\Troncal\4_ConsoleApp2_oop_Propuesta1_DbContext\StudentsFromHell.Lib\obj\Debug\netstandard2.0\StudentsFromHell.Lib.AssemblyInfo.cs
