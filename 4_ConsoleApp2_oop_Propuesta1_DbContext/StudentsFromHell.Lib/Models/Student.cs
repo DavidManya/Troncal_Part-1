@@ -7,11 +7,11 @@ namespace StudentsFromHell.Lib.Models
     {
         public string DniID { get; set; }
         [Required]
-        [StringLength(80, ErrorMessage = "First name cannot be longer than 80 characters.")]
+        [StringLength(80, ErrorMessage = "Los apellidos no pueden superar los 80 carácteres.")]
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
         [Required]
-        [StringLength(40, ErrorMessage = "First name cannot be longer than 40 characters.")]
+        [StringLength(40, ErrorMessage = "El nombre no puede superar los 40 carácteres.")]
         [Display(Name = "First Name")]
         public string FirstName { get; set; }
 

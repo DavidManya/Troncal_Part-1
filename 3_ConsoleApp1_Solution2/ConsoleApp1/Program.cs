@@ -123,9 +123,13 @@ namespace ConsoleApp1
                     var cognom = cadena[2];
                     var val = cadena[3].Replace(".", ",");
 
-                    if (students.ContainsKey(($"{dni}")) == true)
+                    if (string.IsNullOrEmpty(dni) || (dni.Length != 9))
                     {
-                        Console.WriteLine($"Valor dni introducido [{dni}] ya existe. Repetir.");
+                        Console.WriteLine("El DNI introducido tiene un formato incorrecto. Repetir.");
+                    }
+                    else if (students.ContainsKey(($"{dni}")) == true)
+                    {
+                        Console.WriteLine($"Valor DNI introducido [{dni}] ya existe. Repetir.");
                     }
                     else
                     {

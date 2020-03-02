@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dmany\\Desktop\\Troncal\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\StudentsFromHell.Lib.csproj": {}
+    "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\StudentsFromHell.Lib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dmany\\Desktop\\Troncal\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\StudentsFromHell.Lib.csproj": {
+    "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\StudentsFromHell.Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dmany\\Desktop\\Troncal\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\StudentsFromHell.Lib.csproj",
+        "projectUniqueName": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\StudentsFromHell.Lib.csproj",
         "projectName": "StudentsFromHell.Lib",
-        "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\StudentsFromHell.Lib.csproj",
+        "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\StudentsFromHell.Lib.csproj",
         "packagesPath": "C:\\Users\\dmany\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dmany\\Desktop\\Troncal\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\obj\\",
+        "outputPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dmany\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1702,11 +1702,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dmany\\Desktop\\Troncal\\4_ConsoleApp2_oop_Propuesta1_DbContext\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal\\4_ConsoleApp2_oop_Propuesta1_DbContext\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\ConsoleApp1\\ConsoleApp1.csproj",
       "packagesPath": "C:\\Users\\dmany\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dmany\\Desktop\\Troncal\\4_ConsoleApp2_oop_Propuesta1_DbContext\\ConsoleApp1\\obj\\",
+      "outputPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dmany\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1722,8 +1722,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\dmany\\Desktop\\Troncal\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\StudentsFromHell.Lib.csproj": {
-              "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\StudentsFromHell.Lib.csproj"
+            "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\StudentsFromHell.Lib.csproj": {
+              "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\StudentsFromHell.Lib.csproj"
             }
           }
         }

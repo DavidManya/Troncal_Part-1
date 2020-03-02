@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dmany\\Desktop\\Troncal\\5_ConsoleApp2_oop_Solution_Parcial\\ConsoleApp1\\Academy.App.csproj",
+      "projectUniqueName": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\5_ConsoleApp2_oop_Solution_Parcial\\ConsoleApp1\\Academy.App.csproj",
       "projectName": "Academy.App",
-      "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal\\5_ConsoleApp2_oop_Solution_Parcial\\ConsoleApp1\\Academy.App.csproj",
+      "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\5_ConsoleApp2_oop_Solution_Parcial\\ConsoleApp1\\Academy.App.csproj",
       "packagesPath": "C:\\Users\\dmany\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dmany\\Desktop\\Troncal\\5_ConsoleApp2_oop_Solution_Parcial\\ConsoleApp1\\obj\\",
+      "outputPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\5_ConsoleApp2_oop_Solution_Parcial\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dmany\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,8 +52,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\dmany\\Desktop\\Troncal\\5_ConsoleApp2_oop_Solution_Parcial\\StudentsFromHell.Lib\\Academy.Lib.csproj": {
-              "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal\\5_ConsoleApp2_oop_Solution_Parcial\\StudentsFromHell.Lib\\Academy.Lib.csproj"
+            "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\5_ConsoleApp2_oop_Solution_Parcial\\StudentsFromHell.Lib\\Academy.Lib.csproj": {
+              "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\5_ConsoleApp2_oop_Solution_Parcial\\StudentsFromHell.Lib\\Academy.Lib.csproj"
             }
           }
         }

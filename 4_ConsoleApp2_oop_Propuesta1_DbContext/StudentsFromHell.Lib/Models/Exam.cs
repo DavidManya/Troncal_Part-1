@@ -13,10 +13,10 @@ namespace StudentsFromHell.Lib.Models
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         [Display(Name = "Exam Date")]
         public DateTime DateStamp { get; set; }
-        public int Note { get; set; }
+        public double Note { get; set; }
 
-        public ICollection<Student> Student { get; set; }
-        public ICollection<Subject> Subject { get; set; }
+        public ICollection<Student> Students { get; set; }
+        public ICollection<Subject> Subjects { get; set; }
 
         public Exam(int examid, int subjectid, string dniid, DateTime datestamp, int note)
         {

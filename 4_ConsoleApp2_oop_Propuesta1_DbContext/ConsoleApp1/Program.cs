@@ -15,8 +15,8 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
-            Exams = new Dictionary<string, List<double>>();
-            Students = new Dictionary<string, string>();
+            //Exams = new Dictionary<string, List<double>>();
+            //Students = new Dictionary<string, string>();
 
             Console.WriteLine("Bienvenidos al programa de gestión de clase");
             ShowMainMenu();
