@@ -12,8 +12,6 @@ namespace ConsoleApp1
         public static Dictionary<Tuple<int, string>, Classroom> classrooms = new Dictionary<Tuple<int, string>, Classroom>();
         public static Dictionary<int, Exam> exams = new Dictionary<int, Exam>();
 
-        static List<double> MarksList { get; set; }
- 
         static void Main(string[] args)
         {
             subjects.Add(01, new Subject { Name = "Algebra", Teacher = "Karenza Lark" });

@@ -6,3 +6,11 @@ C:\Dev\NetExamples\trainingexample1_averagemarks\ConsoleApp2_oop_Solution\Studen
 C:\Dev\NetExamples\trainingexample1_averagemarks\ConsoleApp2_oop_Solution\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.AssemblyInfo.cs
 C:\Dev\NetExamples\trainingexample1_averagemarks\ConsoleApp2_oop_Solution\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.dll
 C:\Dev\NetExamples\trainingexample1_averagemarks\ConsoleApp2_oop_Solution\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.pdb
+C:\Users\dmany\Desktop\Troncal_Part 1\5_ConsoleApp2_oop_Solution_Parcial\StudentsFromHell.Lib\bin\Debug\netstandard2.0\Academy.Lib.deps.json
+C:\Users\dmany\Desktop\Troncal_Part 1\5_ConsoleApp2_oop_Solution_Parcial\StudentsFromHell.Lib\bin\Debug\netstandard2.0\Academy.Lib.dll
+C:\Users\dmany\Desktop\Troncal_Part 1\5_ConsoleApp2_oop_Solution_Parcial\StudentsFromHell.Lib\bin\Debug\netstandard2.0\Academy.Lib.pdb
+C:\Users\dmany\Desktop\Troncal_Part 1\5_ConsoleApp2_oop_Solution_Parcial\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.csprojAssemblyReference.cache
+C:\Users\dmany\Desktop\Troncal_Part 1\5_ConsoleApp2_oop_Solution_Parcial\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.AssemblyInfoInputs.cache
+C:\Users\dmany\Desktop\Troncal_Part 1\5_ConsoleApp2_oop_Solution_Parcial\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.AssemblyInfo.cs
+C:\Users\dmany\Desktop\Troncal_Part 1\5_ConsoleApp2_oop_Solution_Parcial\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.dll
+C:\Users\dmany\Desktop\Troncal_Part 1\5_ConsoleApp2_oop_Solution_Parcial\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.pdb
