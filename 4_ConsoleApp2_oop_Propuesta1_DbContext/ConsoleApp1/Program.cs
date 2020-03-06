@@ -12,6 +12,7 @@ namespace ConsoleApp1
         static List<Exam> Exams { get; set; }
         static List<Student> Students { get; set; }
         static List<Subject> Subjects { get; set; }
+        static List<Course> Courses { get; set; }
 
         static void Main(string[] args)
         {

@@ -15,8 +15,8 @@ namespace StudentsFromHell.Lib.Models
         public DateTime DateStamp { get; set; }
         public double Note { get; set; }
 
-        public ICollection<Student> Students { get; set; }
-        public ICollection<Subject> Subjects { get; set; }
+        public virtual ICollection<Student> Students { get; set; }
+        public virtual ICollection<Subject> Subjects { get; set; }
 
         public Exam(int examid, int subjectid, string dniid, DateTime datestamp, int note)
         {

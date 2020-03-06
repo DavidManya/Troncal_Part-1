@@ -1,10 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StudentsFromHell.Lib.Models
 {
     public class Student
     {
+        [Key] 
         public string DniID { get; set; }
         [Required]
         [StringLength(80, ErrorMessage = "Los apellidos no pueden superar los 80 carácteres.")]
@@ -14,6 +17,9 @@ namespace StudentsFromHell.Lib.Models
         [StringLength(40, ErrorMessage = "El nombre no puede superar los 40 carácteres.")]
         [Display(Name = "First Name")]
         public string FirstName { get; set; }
+
+        public virtual ICollection<Course> Courses { get; set; }
+        public virtual ICollection<Exam> Exams { get; set; }
 
         public Student(string dniid, string lastname, string firstname)
         {
