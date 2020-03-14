@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\StudentsFromHell.Lib.csproj": {
-                "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\StudentsFromHell.Lib.csproj"
+              "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\Academy.Lib.csproj": {
+                "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\Academy.Lib.csproj"
               }
             }
           }
@@ -48,7 +48,11 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.1, )"
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.2, )"
             }
           },
           "imports": [
@@ -88,12 +92,12 @@
         }
       }
     },
-    "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\StudentsFromHell.Lib.csproj": {
+    "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\Academy.Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\StudentsFromHell.Lib.csproj",
-        "projectName": "StudentsFromHell.Lib",
-        "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\StudentsFromHell.Lib.csproj",
+        "projectUniqueName": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\Academy.Lib.csproj",
+        "projectName": "Academy.Lib",
+        "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\Academy.Lib.csproj",
         "packagesPath": "C:\\Users\\dmany\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4_ConsoleApp2_oop_Propuesta1_DbContext\\StudentsFromHell.Lib\\obj\\",
         "projectStyle": "PackageReference",
@@ -122,23 +126,11 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
-            "EntityFramework": {
-              "target": "Package",
-              "version": "[6.4.0, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[3.1.1, )"
-            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
-            },
-            "System.ComponentModel.Annotations": {
-              "target": "Package",
-              "version": "[4.7.0, )"
             }
           },
           "imports": [

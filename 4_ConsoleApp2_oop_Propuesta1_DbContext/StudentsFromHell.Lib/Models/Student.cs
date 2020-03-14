@@ -1,31 +1,61 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using Academy.Lib.Context;
 
-namespace StudentsFromHell.Lib.Models
+namespace Academy.Lib.Models
 {
-    public class Student
+    public class Student : Entity
     {
-        [Key] 
-        public string DniID { get; set; }
-        [Required]
-        [StringLength(80, ErrorMessage = "Los apellidos no pueden superar los 80 carácteres.")]
-        [Display(Name = "Last Name")]
+        public string Dni { get; set; }
         public string LastName { get; set; }
-        [Required]
-        [StringLength(40, ErrorMessage = "El nombre no puede superar los 40 carácteres.")]
-        [Display(Name = "First Name")]
         public string FirstName { get; set; }
 
-        public virtual ICollection<Course> Courses { get; set; }
-        public virtual ICollection<Exam> Exams { get; set; }
-
-        public Student(string dniid, string lastname, string firstname)
+        public static bool ValidateDni(string dni)
         {
-            this.DniID = dniid;
-            this.LastName = lastname;
-            this.FirstName = firstname;
+            if (string.IsNullOrEmpty(dni))
+            {
+                return false;
+            }
+            else if (dni.Length != 9)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        public static bool ValidateName(string name)
+        {
+            return !string.IsNullOrEmpty(name);
+        }
+
+        public bool Save()
+        {
+            var validation = ValidateDni(this.Dni);
+            if (!validation)
+                return false;
+
+            validation = ValidateName(this.FirstName);
+            if (!validation)
+                return false;
+
+            validation = ValidateName(this.LastName);
+            if (!validation)
+                return false;
+
+            if (this.Id == null)
+            {
+                DbContext.AddStudent(this);
+            }
+            else
+            {
+                DbContext.UpdateStudent(this);
+            }
+
+            return true;
         }
     }
 }

@@ -867,12 +867,11 @@ namespace ConsoleApp1
                 subjects.Add(09, new Subject { Name = "Data Structures & Algorithms", Teacher = "Sage Velma" });
                 subjects.Add(10, new Subject { Name = "Software Engineering", Teacher = "Shevon Yasmin" });
 
-
-                students.Add("12345678A", new Student { FirstName = "Luís", LastName = "Barbero Narbona" });
-                students.Add("23456789B", new Student { FirstName = "David", LastName = "Alamán Martínez" });
-                students.Add("34567890C", new Student { FirstName = "Roser", LastName = "Aynés Aubia" });
-                students.Add("45678901D", new Student { FirstName = "Blanca", LastName = "Herrezuelo González" });
-                students.Add("56789012E", new Student { FirstName = "José Luís", LastName = "Rodríguez Zapatero" });
+                students.Add("12345678A", new Student { FirstName = "Lola", LastName = "Mento Mucho" });
+                students.Add("23456789B", new Student { FirstName = "Elena", LastName = "Nito Del Bosque" });
+                students.Add("34567890C", new Student { FirstName = "Dolores", LastName = "Fuertes De Barriga" });
+                students.Add("45678901D", new Student { FirstName = "Armando", LastName = "Bronca Segura" });
+                students.Add("56789012E", new Student { FirstName = "Matías", LastName = "Queroso Mogollón" });
 
                 classrooms.Add(Tuple.Create(1, "12345678A"), new Classroom { DateEnrolment = "02-02-2020", ChairNumber = 23 });
                 classrooms.Add(Tuple.Create(2, "12345678A"), new Classroom { DateEnrolment = "02-02-2020", ChairNumber = 23 });

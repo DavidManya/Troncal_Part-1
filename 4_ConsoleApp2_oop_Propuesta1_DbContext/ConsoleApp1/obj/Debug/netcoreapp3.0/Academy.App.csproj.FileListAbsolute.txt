@@ -1,0 +1,14 @@
+C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.csprojAssemblyReference.cache
+C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.AssemblyInfoInputs.cache
+C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.AssemblyInfo.cs
+C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\ConsoleApp1\bin\Debug\netcoreapp3.0\Academy.App.exe
+C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\ConsoleApp1\bin\Debug\netcoreapp3.0\Academy.App.deps.json
+C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\ConsoleApp1\bin\Debug\netcoreapp3.0\Academy.App.runtimeconfig.json
+C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\ConsoleApp1\bin\Debug\netcoreapp3.0\Academy.App.runtimeconfig.dev.json
+C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\ConsoleApp1\bin\Debug\netcoreapp3.0\Academy.App.dll
+C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\ConsoleApp1\bin\Debug\netcoreapp3.0\Academy.App.pdb
+C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\ConsoleApp1\bin\Debug\netcoreapp3.0\Academy.Lib.dll
+C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\ConsoleApp1\bin\Debug\netcoreapp3.0\Academy.Lib.pdb
+C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.csproj.CopyComplete
+C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.dll
+C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.pdb
