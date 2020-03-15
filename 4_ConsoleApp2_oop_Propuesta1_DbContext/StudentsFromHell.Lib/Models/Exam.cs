@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Academy.Lib.Context
+namespace Academy.Lib.Models
 {
     public class Exam
     {

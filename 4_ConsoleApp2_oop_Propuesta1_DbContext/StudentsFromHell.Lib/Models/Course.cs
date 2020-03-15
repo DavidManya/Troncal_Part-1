@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Academy.Lib.Context
+namespace Academy.Lib.Models
 {
 	public class Course
     {

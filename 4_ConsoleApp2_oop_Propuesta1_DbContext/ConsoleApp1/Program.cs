@@ -8,50 +8,37 @@ namespace ConsoleApp1
 {
     class Program
     {
-        static string CurrentOption { get; set; }
-
         static void Main(string[] args)
         {
 
             InitialLoadData();
 
             Console.WriteLine("-- Bienvenid@ al programa para gestión de Academy --");
-            Console.WriteLine("Opción: l / Para ver listado de Asignaturas");
             Console.WriteLine("Opción: a / Para gestión de Asignaturas");
             Console.WriteLine("Opción: g / Para gestión de Alumnos");
-            Console.WriteLine("Opción: c / Para listar Asignaturas del Alumno");
             Console.WriteLine("Opción: s / Para obtener estadísticas");
             Console.WriteLine("Opción: e / Para salir de la aplicación");
             Console.WriteLine();
 
             var keepdoing = true;
 
-
             while (keepdoing)
             {
-                var option = char.ToLower(Console.ReadKey().KeyChar);
+                var option = Console.ReadLine().ToLower();
 
-                if (option == 'l')
+                if (option == "a")
                 {
-                    ShowSubjectList();
+                    ShowSubjectsMenu();
                 }
-                if (option == 'a')
-                {
-                    AddSubjects();
-                }
-                else if (option == 'g')
+                else if (option == "g")
                 {
                     ShowStudentsMenu();
                 }
-                else if (option == 'c')
-                {
-                    ShowSubjectStudentMenu();
-                }
-                else if (option == 's')
+                else if (option == "s")
                 {
                     ShowStatsMenu();
                 }
-                else if (option == 'e')
+                else if (option == "e")
                 {
                     ExitConsole();
                 }
@@ -63,13 +50,69 @@ namespace ConsoleApp1
 
             static void ShowMainMenu()
             {
-                Console.WriteLine("-- Menú principal --");
-                Console.WriteLine("Opción: l / Para ver listado de Asignaturas");
+                Console.WriteLine();
+                Console.WriteLine("-- Menú principal Academy --");
                 Console.WriteLine("Opción: a / Para gestión de Asignaturas");
                 Console.WriteLine("Opción: g / Para gestión de Alumnos");
-                Console.WriteLine("Opción: c / Para listar Asignaturas del Alumno");
                 Console.WriteLine("Opción: s / Para obtener estadísticas");
                 Console.WriteLine("Opción: e / Para salir de la aplicación");
+                Console.WriteLine();
+            }
+
+            static void ShowSubjectsMenu()
+            {
+                Console.WriteLine();
+                ShowSubjectsMenuOptions();
+
+                var keepdoing = true;
+
+                while (keepdoing)
+                {
+                    var option = Console.ReadLine().ToLower();
+
+                    if (option == "")
+                    {
+                        Console.WriteLine("No ha informado ninguna opción");
+                    }
+                    else if (option == "l")
+                    {
+                        ShowSubjectList();
+                    }
+                    else if (option == "a")
+                    {
+                        AddSubjects();
+                    }
+                    else if (option == "b")
+                    {
+                        DeleteSubject();
+                    }
+                    else if (option == "m")
+                    {
+                        keepdoing = false;
+                        break;
+                    }
+                    else if (option == "e")
+                    {
+                        ExitConsole();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Opción no reconocida. Introduzca una válida");
+                    }
+                }
+
+                ShowMainMenu();
+                Console.WriteLine();
+            }
+
+            static void ShowSubjectsMenuOptions()
+            {
+                Console.WriteLine();
+                Console.WriteLine("-- Menú Asignaturas --");
+                Console.WriteLine("Opción: l / Para ver listado de Asignaturas");
+                Console.WriteLine("Opción: a / Para añadir Asignaturas");
+                Console.WriteLine("Opción: b / Para eliminar Asignaturas");
+                Console.WriteLine("Opción: m / Para volver al menú principal");
                 Console.WriteLine();
             }
 
@@ -78,40 +121,131 @@ namespace ConsoleApp1
                 Console.WriteLine();
                 Console.WriteLine("-- Lista de Cursos (Código/Nombre/Profesor) --");
 
-                foreach (KeyValuePair<int, Subject> subject in DbContext.subjects)
+                foreach (KeyValuePair<string, Subject> subject in DbContext.subjects)
                 {
-                    Console.WriteLine("{0}: {1}/{2}", Convert.ToString(subject.Key), subject.Value.Name, subject.Value.Teacher);
+                    Console.WriteLine("{0}: {1}/{2}", subject.Key, subject.Value.Name, subject.Value.Teacher);
                 }
                 Console.WriteLine("----------------------------------------------");
+                Console.WriteLine();
             }
 
             static void AddSubjects()
             {
+                Console.WriteLine();
+                Console.WriteLine("-- Añadir nuevas Asignaturas --");
+                Console.WriteLine("Introduzca 2 campos separados por comas con Título Asignatura, Nombre del Profesor y pulse enter");
+                Console.WriteLine("- Para volver al menú anterior pulse m");
+                Console.WriteLine();
 
-            }
+                var keepdoing = true;
 
-            static void ShowStudentsMenuOptions()
-            {
-                Console.WriteLine("-- Menú gestión Alumnos --");
-                Console.WriteLine("Opción: add / Para añadir un nuevo Alumno");
-                Console.WriteLine("Opción: edit / Para editar un Alumno");
-                Console.WriteLine("Opción: del / Para eliminar un Alumno");
-                Console.WriteLine("Opción: all / Para ver todos los Alumnos");
-                Console.WriteLine("Opción: sub / Para añadir Alumno a un Curso ");
-                Console.WriteLine("Opción: mark / Para añadir Notas a los Alumnos");
-                Console.WriteLine("Opción: m / Para volver al menú principal");
-                Console.WriteLine("Opción: e / Para salir de la aplicación");
+                while (keepdoing)
+                {
+                    var text = Console.ReadLine();
+                    string[] words = text.Split(',');
+
+                    if (words[0] == "")
+                    {
+                        Console.WriteLine("No ha introducido datos");
+                    }
+                    else if (words[0] == "m" || words[0] == "M")
+                    {
+                        keepdoing = false;
+                        break;
+                    }
+                    else if (words[0] == "e" || words[0] == "E")
+                    {
+                        ExitConsole();
+                    }
+                    else if (words.Length == 1)
+                    {
+                        Console.WriteLine("Falta Nombre del profesor");
+                    }
+                    else
+                    {
+                        var search = DbContext.subjects.Where(p => p.Value.Name.Equals(words[0]));
+
+                        if (search.Count() > 0)
+                        {
+                            Console.WriteLine("La Asignatura introducida, ya existe");
+                        }
+                        else
+                        {
+                            var clau = 0;
+                            clau = DbContext.subjects.Max(x => x.Value.SubjectID) + 1;
+
+                            var subject = new Subject
+                            {
+                                Id = Convert.ToString(clau),
+                                SubjectID = clau,
+                                Name = words[0],
+                                Teacher = words[1]
+                            };
+
+                            if (subject.Save())
+                            {
+                                Console.WriteLine("- Alta correcta -");
+                            }
+                            else
+                            {
+                                Console.WriteLine("- Alta incorrecta -");
+                            }
+                            Console.WriteLine();
+                        }
+
+                    }
+                }
+
+                ShowSubjectsMenuOptions();
                 Console.WriteLine();
             }
 
-            static void ShowStatsMenuOptions()
+            static void DeleteSubject()
             {
                 Console.WriteLine();
-                Console.WriteLine("-- Menú de Estadísticas --");
-                Console.WriteLine("Opción: avg / Para ver la media");
-                Console.WriteLine("Opción: max / Para ver la nota más alta");
-                Console.WriteLine("Opción: min / Para ver la nota más baja");
-                Console.WriteLine("Opción: m / Para volver al menú principal");
+                Console.WriteLine("-- Eliminar Asignaturas --");
+                Console.WriteLine("Introduzca el Código de la Asignatura y pulse enter");
+                Console.WriteLine("- Para volver al menú anterior pulse m");
+                Console.WriteLine();
+
+                var keepdoing = true;
+
+                while (keepdoing)
+                {
+                    var text = Console.ReadLine();
+
+                    if (text == "")
+                    {
+                        Console.WriteLine("El Código no está informado");
+                    }
+                    else if (text == "m")
+                    {
+                        keepdoing = false;
+                        break;
+                    }
+                    else if (text == "e")
+                    {
+                        ExitConsole();
+                    }
+                    else
+                    {
+                        var search1 = DbContext.subjects.Where(p => p.Key.Equals(text));
+
+                        if (search1.Count() == 0)
+                        {
+                            Console.WriteLine("El Código de la Asignatura introducido no está en la base de datos");
+                        }
+                        else
+                        {
+                            DbContext.subjects.Remove(text);
+
+                            Console.WriteLine("- Baja correcta -");
+                            Console.WriteLine();
+                        }
+                    }
+                }
+
+                ShowSubjectsMenuOptions();
                 Console.WriteLine();
             }
 
@@ -150,9 +284,17 @@ namespace ConsoleApp1
                     {
                         AddSubjectStudent();
                     }
+                    else if (option == "lis")
+                    {
+                        ShowSubjectStudentMenu();
+                    }
                     else if (option == "mark")
                     {
                         AddMarkStudent();
+                    }
+                    else if (option == "note")
+                    {
+                        ShowMarkStudent();
                     }
                     else if (option == "m")
                     {
@@ -167,46 +309,26 @@ namespace ConsoleApp1
                     {
                         Console.WriteLine("Opción no reconocida. Introduzca una válida");
                     }
-
                 }
 
                 ShowMainMenu();
+                Console.WriteLine();
             }
 
-            static void ShowStatsMenu()
+            static void ShowStudentsMenuOptions()
             {
+                Console.WriteLine("-- Menú gestión Alumnos --");
+                Console.WriteLine("Opción: add / Para añadir un nuevo Alumno");
+                Console.WriteLine("Opción: edit / Para editar un Alumno");
+                Console.WriteLine("Opción: del / Para eliminar un Alumno");
+                Console.WriteLine("Opción: all / Para ver todos los Alumnos");
+                Console.WriteLine("Opción: sub / Para añadir Asignaturas a un Alumno");
+                Console.WriteLine("Opción: lis / Para listar Asignaturas del Alumno");
+                Console.WriteLine("Opción: mark / Para añadir Notas a los Alumnos");
+                Console.WriteLine("Opción: note / Para ver las Notas de los Alumnos");
+                Console.WriteLine("Opción: m / Para volver al menú principal");
+                Console.WriteLine("Opción: e / Para salir de la aplicación");
                 Console.WriteLine();
-                ShowStatsMenuOptions();
-
-                while (true)
-                {
-                    var option = Console.ReadLine().ToLower();
-
-                    if (option == "m")
-                    {
-                        break;
-                    }
-                    else if (option == "avg")
-                    {
-                        ShowAverage();
-                    }
-                    else if (option == "max")
-                    {
-                        ShowMaximum();
-                    }
-                    else if (option == "min")
-                    {
-                        ShowMinimum();
-                    }
-                    else
-                    {
-                        Console.WriteLine("Opción no reconocida. Introduzca una válida");
-                    }
-                }
-
-                ClearCurrentConsoleLine();
-                Console.WriteLine();
-                ShowMainMenu();
             }
 
             static void ShowAllStudents()
@@ -218,6 +340,8 @@ namespace ConsoleApp1
                 {
                     Console.WriteLine("{0}: {1}, {2}", student.Key, student.Value.LastName, student.Value.FirstName);
                 }
+
+                Console.WriteLine();
             }
 
             static void AddNewStudent()
@@ -287,7 +411,7 @@ namespace ConsoleApp1
                 }
 
                 ShowStudentsMenuOptions();
-
+                Console.WriteLine();
             }
 
             static void EditStudent()
@@ -359,7 +483,7 @@ namespace ConsoleApp1
                 }
 
                 ShowStudentsMenuOptions();
-
+                Console.WriteLine();
             }
 
             static void DeleteStudent()
@@ -369,6 +493,7 @@ namespace ConsoleApp1
                 Console.WriteLine("-- Eliminar Alumnos --");
                 Console.WriteLine("Introduzca el DNI y pulse enter");
                 Console.WriteLine("- Para volver al menú anterior pulse m");
+                
                 var keepdoing = true;
 
                 while (keepdoing)
@@ -398,7 +523,7 @@ namespace ConsoleApp1
 
                         if (search1.Count() == 0)
                         {
-                            Console.WriteLine("El DNI introducido, no está guardado");
+                            Console.WriteLine("El DNI introducido no está en la base de datos");
                         }
                         else
                         {
@@ -428,7 +553,7 @@ namespace ConsoleApp1
                 }
 
                 ShowStudentsMenuOptions();
-
+                Console.WriteLine();
             }
 
             static void AddSubjectStudent()
@@ -489,16 +614,16 @@ namespace ConsoleApp1
 
                             var subject = new Subject
                             {
-                                SubjectID = Convert.ToInt32(words[0])
+                                Id = words[0]
                             };
 
-                            if (!DbContext.ExistStudent(student))
-                            {
-                                Console.WriteLine("El alumno introducido no está en la base de datos");
-                            }
-                            else if (!DbContext.ExistSubject(subject))
+                            if (!DbContext.ExistSubject(subject))
                             {
                                 Console.WriteLine("El código de la asignatura introducido no está en la base de datos");
+                            }
+                            else if (!DbContext.ExistStudent(student))
+                            {
+                                Console.WriteLine("El alumno introducido no está en la base de datos");
                             }
                             else
                             {
@@ -511,76 +636,7 @@ namespace ConsoleApp1
                 }
 
                 ShowStudentsMenuOptions();
-
-            }
-
-            static void AddMarkStudent()
-            {
                 Console.WriteLine();
-                Console.WriteLine("-- Añadir notas a Alumnos --");
-                Console.WriteLine("Introduzca 4 campos separados por comas con el Código de Asignatura, DNI del Alumno, fecha del exámen (aaaa-mm-dd) y la nota (0.0), y pulse enter");
-                Console.WriteLine("- Para volver al menú anterior pulse m");
-                Console.WriteLine();
-                var keepdoing = true;
-
-                while (keepdoing)
-                {
-                    var text = Console.ReadLine();
-                    string[] words = text.Split(',');
-
-                    DateTime data;
-                    Double nota;
-                    var clau = 0;
-                    
-                    clau = DbContext.exams.Max(x => x.Key) + 1;
-
-                    if (words[0] == "")
-                    {
-                        Console.WriteLine("No ha introducido datos");
-                    }
-                    else if (words[0] == "m")
-                    {
-                        keepdoing = false;
-                        break;
-                    }
-                    else if (words[0] == "e")
-                    {
-                        ExitConsole();
-                    }
-                    else if (words.Length == 1 || words.Length == 2 || words.Length == 3)
-                    {
-                        Console.WriteLine("No ha informado todos los datos");
-                    }
-                    else if (!Student.ValidateDni(words[0]))
-                    {
-                        Console.WriteLine("El DNI está en un formato incorrecto");
-                    }
-                    else if (!DateTime.TryParse(words[2], out data))
-                    {
-                        Console.WriteLine($"Fecha introducida {words[2]} incorrecta");
-                    }
-                    else if (!Double.TryParse(words[3].Replace(".", ","), out nota))
-                    {
-                        Console.WriteLine($"Nota introducida {words[3]} incorrecta");
-                    }
-                    else
-                    {
-                        var search = DbContext.exams.Where(p => p.Value.SubjectID.Equals(words[0]) && p.Value.DniID.Equals(words[1]) && p.Value.DateExam.Equals(words[2]));
-
-                        if (search.Count() > 0)
-                        {
-                            Console.WriteLine("Esta Nota ya estaba añadida");
-                        }
-                        else
-                        {
-                            DbContext.exams.Add(clau, new Exam { SubjectID = Convert.ToInt32(words[0]), DniID = words[1], DateExam = Convert.ToDateTime(words[2]), Note = nota });
-                            Console.WriteLine("- Nota añadida correctamente -");
-                        }
-                    }
-                }
-
-                ShowStudentsMenuOptions();
-
             }
 
             static void ShowSubjectStudentMenu()
@@ -625,11 +681,210 @@ namespace ConsoleApp1
                             var name = search2.SingleOrDefault();
                             Console.WriteLine("{0} - {1}", name, Convert.ToString(result.Value.DateEnrolment));
                         }
+                        Console.WriteLine();
                     }
                 }
 
                 ShowMainMenu();
+                Console.WriteLine();
+            }
 
+            static void AddMarkStudent()
+            {
+                Console.WriteLine();
+                Console.WriteLine("-- Añadir notas a Alumnos --");
+                Console.WriteLine("Introduzca 4 campos separados por comas con el Código de Asignatura, DNI del Alumno, fecha del exámen (aaaa-mm-dd) y la nota (0.0), y pulse enter");
+                Console.WriteLine("- Para volver al menú anterior pulse m");
+                Console.WriteLine();
+                var keepdoing = true;
+
+                while (keepdoing)
+                {
+                    var text = Console.ReadLine();
+                    string[] words = text.Split(',');
+
+                    DateTime data;
+                    Double nota;
+                    var clau = 0;
+
+                    var dates = DbContext.exams;
+
+                    if (dates.Count > 0)
+                    {
+                        clau = DbContext.exams.Max(x => x.Key) + 1;
+                    }
+
+                    if (words[0] == "")
+                    {
+                        Console.WriteLine("No ha introducido datos");
+                    }
+                    else if (words[0] == "m")
+                    {
+                        keepdoing = false;
+                        break;
+                    }
+                    else if (words[0] == "e")
+                    {
+                        ExitConsole();
+                    }
+                    else if (words.Length == 1 || words.Length == 2 || words.Length == 3)
+                    {
+                        Console.WriteLine("No ha informado todos los datos");
+                    }
+                    else if (!Student.ValidateDni(words[1]))
+                    {
+                        Console.WriteLine("El DNI está en un formato incorrecto");
+                    }
+                    else if (!DateTime.TryParse(words[2], out data))
+                    {
+                        Console.WriteLine($"Fecha introducida {words[2]} incorrecta");
+                    }
+                    else if (!Double.TryParse(words[3].Replace(".", ","), out nota))
+                    {
+                        Console.WriteLine($"Nota introducida {words[3]} incorrecta");
+                    }
+                    else
+                    {
+                        var student = new Student
+                        {
+                            Dni = words[1]
+                        };
+
+                        var subject = new Subject
+                        {
+                            Id = words[0]
+                        };
+
+                        if (!DbContext.ExistSubject(subject))
+                        {
+                            Console.WriteLine("El código de la asignatura introducido no está en la base de datos");
+                        }
+                        else if (!DbContext.ExistStudent(student))
+                        {
+                            Console.WriteLine("El alumno introducido no está en la base de datos");
+                        }
+                        else
+                        {
+                            var search = DbContext.exams.Where(p => p.Value.SubjectID.Equals(words[0]) && p.Value.DniID.Equals(words[1]) && p.Value.DateExam.Equals(words[2]));
+
+                            if (search.Count() > 0)
+                            {
+                                Console.WriteLine("Esta Nota ya estaba añadida");
+                            }
+                            else
+                            {
+                                DbContext.exams.Add(clau, new Exam { SubjectID = Convert.ToInt32(words[0]), DniID = words[1], DateExam = Convert.ToDateTime(words[2]), Note = nota });
+                                Console.WriteLine("- Nota añadida correctamente -");
+                            }
+                        }
+                    }
+                }
+
+                ShowStudentsMenuOptions();
+                Console.WriteLine();
+            }
+
+            static void ShowMarkStudent()
+            {
+                Console.WriteLine();
+                Console.WriteLine("-- Mostrar Notas del Alumno --");
+                Console.WriteLine("Introduzca el DNI y pulse enter");
+                Console.WriteLine("- Para volver al menú anterior pulse m");
+
+                var keepdoing = true;
+
+                while (keepdoing)
+                {
+                    var text = Console.ReadLine();
+
+                    if (text == "")
+                    {
+                        Console.WriteLine("El DNI no está informado");
+                    }
+                    else if (text == "m")
+                    {
+                        keepdoing = false;
+                        break;
+                    }
+                    else if (text == "e")
+                    {
+                        ExitConsole();
+                    }
+                    else if (!Student.ValidateDni(text))
+                    {
+                        Console.WriteLine("El DNI está en un formato incorrecto");
+                    }
+                    else
+                    {
+                        var search = DbContext.exams.Where(p => p.Value.DniID.Equals(text));
+                        if (search.Count() == 0)
+                        {
+                            Console.WriteLine("No se han encontrao Notas todavía");
+                        }
+                        else
+                        {
+                            Console.WriteLine("-- Listado de Notas del Alumno (Asignatura/Nota) --");
+
+                            foreach (var result in search)
+                            {
+                                var search2 = DbContext.subjects.Where(x => x.Value.SubjectID.Equals(result.Value.SubjectID)).Select(x => x.Value.Name);
+                                var name = search2.SingleOrDefault();
+                                Console.WriteLine("{0} - {1}", name, result.Value.Note);
+                            }
+                        }
+
+                    }
+                }
+
+                ShowStudentsMenuOptions();
+                Console.WriteLine();
+            }
+
+            static void ShowStatsMenu()
+            {
+                Console.WriteLine();
+                ShowStatsMenuOptions();
+
+                while (true)
+                {
+                    var option = Console.ReadLine().ToLower();
+
+                    if (option == "m")
+                    {
+                        break;
+                    }
+                    else if (option == "avg")
+                    {
+                        ShowAverage();
+                    }
+                    else if (option == "max")
+                    {
+                        ShowMaximum();
+                    }
+                    else if (option == "min")
+                    {
+                        ShowMinimum();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Opción no reconocida. Introduzca una válida");
+                    }
+                }
+
+                ClearCurrentConsoleLine();
+                ShowMainMenu();
+                Console.WriteLine();
+            }
+
+            static void ShowStatsMenuOptions()
+            {
+                Console.WriteLine();
+                Console.WriteLine("-- Menú de Estadísticas --");
+                Console.WriteLine("Opción: avg / Para ver la media");
+                Console.WriteLine("Opción: max / Para ver la nota más alta");
+                Console.WriteLine("Opción: min / Para ver la nota más baja");
+                Console.WriteLine("Opción: m / Para volver al menú principal");
+                Console.WriteLine();
             }
 
             #region Formulas
@@ -940,16 +1195,16 @@ namespace ConsoleApp1
             static void InitialLoadData()
             {
                 //Llistat d'assignatures
-                DbContext.subjects.Add(1, new Subject { SubjectID = 1, Name = "Algebra", Teacher = "Karenza Lark" });
-                DbContext.subjects.Add(2, new Subject { SubjectID = 2, Name = "Computer Structure", Teacher = "Jacinth Kaelyn" });
-                DbContext.subjects.Add(3, new Subject { SubjectID = 3, Name = "Databases", Teacher = "Vinny Maybelle" });
-                DbContext.subjects.Add(4, new Subject { SubjectID = 4, Name = "Programming Methodology", Teacher = "Gae Pamila" });
-                DbContext.subjects.Add(5, new Subject { SubjectID = 5, Name = "Digital Systems Design Principles", Teacher = "Terrance Ann" });
-                DbContext.subjects.Add(6, new Subject { SubjectID = 6, Name = "Mathematical Analysis", Teacher = "Branden Khariton" });
-                DbContext.subjects.Add(7, new Subject { SubjectID = 7, Name = "Fundamentals of Computer Technology", Teacher = "Cybill Aldous" });
-                DbContext.subjects.Add(8, new Subject { SubjectID = 8, Name = "Computer Architecture", Teacher = "Myla Praskoviya" });
-                DbContext.subjects.Add(9, new Subject { SubjectID = 9, Name = "Data Structures & Algorithms", Teacher = "Sage Velma" });
-                DbContext.subjects.Add(10, new Subject { SubjectID = 10, Name = "Software Engineering", Teacher = "Shevon Yasmin" });
+                DbContext.subjects.Add("1", new Subject { SubjectID = 1, Name = "Algebra", Teacher = "Karenza Lark" });
+                DbContext.subjects.Add("2", new Subject { SubjectID = 2, Name = "Computer Structure", Teacher = "Jacinth Kaelyn" });
+                DbContext.subjects.Add("3", new Subject { SubjectID = 3, Name = "Databases", Teacher = "Vinny Maybelle" });
+                DbContext.subjects.Add("4", new Subject { SubjectID = 4, Name = "Programming Methodology", Teacher = "Gae Pamila" });
+                DbContext.subjects.Add("5", new Subject { SubjectID = 5, Name = "Digital Systems Design Principles", Teacher = "Terrance Ann" });
+                DbContext.subjects.Add("6", new Subject { SubjectID = 6, Name = "Mathematical Analysis", Teacher = "Branden Khariton" });
+                DbContext.subjects.Add("7", new Subject { SubjectID = 7, Name = "Fundamentals of Computer Technology", Teacher = "Cybill Aldous" });
+                DbContext.subjects.Add("8", new Subject { SubjectID = 8, Name = "Computer Architecture", Teacher = "Myla Praskoviya" });
+                DbContext.subjects.Add("9", new Subject { SubjectID = 9, Name = "Data Structures & Algorithms", Teacher = "Sage Velma" });
+                DbContext.subjects.Add("10", new Subject { SubjectID = 10, Name = "Software Engineering", Teacher = "Shevon Yasmin" });
             }
             #endregion
         }

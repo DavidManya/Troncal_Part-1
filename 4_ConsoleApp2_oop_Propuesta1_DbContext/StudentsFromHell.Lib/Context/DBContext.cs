@@ -1,6 +1,4 @@
-﻿
-using Academy.Lib.Models;
-
+﻿using Academy.Lib.Models;
 using System;
 using System.Collections.Generic;
 
@@ -10,7 +8,7 @@ namespace Academy.Lib.Context
     {
         #region Repositories
         public static Dictionary<string, Student> students = new Dictionary<string, Student>();
-        public static Dictionary<int, Subject> subjects = new Dictionary<int, Subject>();
+        public static Dictionary<string, Subject> subjects = new Dictionary<string, Subject>();
         public static Dictionary<Tuple<int, string>, Course> courses = new Dictionary<Tuple<int, string>, Course>();
         public static Dictionary<int, Exam> exams = new Dictionary<int, Exam>();
         #endregion
@@ -49,6 +47,33 @@ namespace Academy.Lib.Context
 
             return true;
         }
+
+        public static bool AddSubject(Subject subject)
+        {
+            subjects.Add(subject.Id, subject);
+
+            return true;
+        }
+
+        public static bool UpdateSubject(Subject subject)
+        {
+            if (subject.Id != null && subjects.ContainsKey(subject.Id))
+            {
+                var subjectInMemory = subjects[subject.Id];
+
+                if (subject != subjectInMemory)
+                {
+                    subjects.Remove(subject.Id);
+                    AddSubject(subject);
+                }
+            }
+            else
+            {
+                AddSubject(subject);
+            }
+
+            return true;
+        }
         #endregion
 
         #region ValidateExist
@@ -65,7 +90,7 @@ namespace Academy.Lib.Context
 
         public static bool ExistSubject(Subject subject)
         {
-            if (!subjects.ContainsKey(subject.SubjectID))
+            if (!subjects.ContainsKey(subject.Id))
             {
                 return false;
             }
