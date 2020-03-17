@@ -1,0 +1,20 @@
+1) El Core tiene las librerias comunes a usar a partir de ahora:
+
+ Common.Lib
+ - Entity
+ - IRepository
+ - ValdationResult
+ - SaveResult
+ - DeleteResult
+
+ Common.Lib.Client
+ - ClientRepository (para entornos cliente-servidor)
+
+ Common.Lib.DAL.EFCore
+ - EFCoreRepository (para entornos de servidor o de aplicaciones individuales)
+
+2) Ejemplo de implementación del EF Core con cliente servidor
+3) Ejemplo de Inyección de Dependencias (DI) con cliente servidor
+4) Itegración del EF Core (ORM) con la DI
+5) Ejemplo de MVVM con WPF
+6) Estructura de ejemplo de la aplicación para la prueba (ver apartado 8 de las prácticas)

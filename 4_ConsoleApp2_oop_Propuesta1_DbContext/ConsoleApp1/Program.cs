@@ -569,6 +569,7 @@ namespace ConsoleApp1
                     var text = Console.ReadLine();
                     string[] words = text.Split(',');
                     DateTime dateTime;
+                    var asiento = 0;
 
                     if (words[0] == "")
                     {
@@ -591,9 +592,13 @@ namespace ConsoleApp1
                     {
                         Console.WriteLine("El DNI está en un formato incorrecto");
                     }
-                    else if (!(DateTime.TryParse(words[2], out dateTime)))
+                    else if (!DateTime.TryParse(words[2], out dateTime))
                     {
                         Console.WriteLine($"Revise la fecha introducida {words[2]}");
+                    }
+                    else if (!int.TryParse(words[3], out asiento))
+                    {
+                        Console.WriteLine($"Revise el valor del asiento introducido {words[3]}");
                     }
                     else
                     {
@@ -627,7 +632,7 @@ namespace ConsoleApp1
                             }
                             else
                             {
-                                DbContext.courses.Add(tuple, new Course { DateEnrolment = Convert.ToDateTime(words[2]), ChairNumber = Convert.ToInt32(words[3]) });
+                                DbContext.courses.Add(tuple, new Course { DateEnrolment = dateTime, ChairNumber = asiento });
                                 Console.WriteLine("- Alta Curso correcta -");
                                 Console.WriteLine();
                             }

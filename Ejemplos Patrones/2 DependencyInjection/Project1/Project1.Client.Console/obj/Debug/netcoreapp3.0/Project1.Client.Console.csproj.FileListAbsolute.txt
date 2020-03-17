@@ -1,0 +1,3 @@
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project1.Client.Console\obj\Debug\netcoreapp3.0\Project1.Client.Console.csprojAssemblyReference.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project1.Client.Console\obj\Debug\netcoreapp3.0\Project1.Client.Console.AssemblyInfoInputs.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project1.Client.Console\obj\Debug\netcoreapp3.0\Project1.Client.Console.AssemblyInfo.cs

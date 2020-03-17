@@ -1,0 +1,32 @@
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project1.Lib\bin\Debug\netstandard2.0\_Project1.Lib.deps.json
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project1.Lib\bin\Debug\netstandard2.0\_Project1.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project1.Lib\bin\Debug\netstandard2.0\_Project1.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project1.Lib\bin\Debug\netstandard2.0\Common.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project1.Lib\bin\Debug\netstandard2.0\Common.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project1.Lib\obj\Debug\netstandard2.0\_Project1.Lib.AssemblyInfoInputs.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project1.Lib\obj\Debug\netstandard2.0\_Project1.Lib.AssemblyInfo.cs
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project1.Lib\obj\Debug\netstandard2.0\_Project1.Lib.csproj.CopyComplete
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project1.Lib\obj\Debug\netstandard2.0\_Project1.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project1.Lib\obj\Debug\netstandard2.0\_Project1.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project1.Lib\bin\Debug\netstandard2.0\_Project1.Lib.deps.json
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project1.Lib\bin\Debug\netstandard2.0\_Project1.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project1.Lib\bin\Debug\netstandard2.0\_Project1.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project1.Lib\bin\Debug\netstandard2.0\Common.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project1.Lib\bin\Debug\netstandard2.0\Common.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project1.Lib\obj\Debug\netstandard2.0\_Project1.Lib.csprojAssemblyReference.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project1.Lib\obj\Debug\netstandard2.0\_Project1.Lib.AssemblyInfoInputs.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project1.Lib\obj\Debug\netstandard2.0\_Project1.Lib.AssemblyInfo.cs
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project1.Lib\obj\Debug\netstandard2.0\_Project1.Lib.csproj.CopyComplete
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project1.Lib\obj\Debug\netstandard2.0\_Project1.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project1.Lib\obj\Debug\netstandard2.0\_Project1.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project1.Lib\bin\Debug\netstandard2.0\_Project1.Lib.deps.json
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project1.Lib\bin\Debug\netstandard2.0\_Project1.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project1.Lib\bin\Debug\netstandard2.0\_Project1.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project1.Lib\bin\Debug\netstandard2.0\Common.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project1.Lib\bin\Debug\netstandard2.0\Common.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project1.Lib\obj\Debug\netstandard2.0\_Project1.Lib.csprojAssemblyReference.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project1.Lib\obj\Debug\netstandard2.0\_Project1.Lib.AssemblyInfoInputs.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project1.Lib\obj\Debug\netstandard2.0\_Project1.Lib.AssemblyInfo.cs
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project1.Lib\obj\Debug\netstandard2.0\_Project1.Lib.csproj.CopyComplete
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project1.Lib\obj\Debug\netstandard2.0\_Project1.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project1.Lib\obj\Debug\netstandard2.0\_Project1.Lib.pdb

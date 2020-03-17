@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Project1.Lib\_Project1.Lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Common.Lib">
+      <HintPath>..\..\..\0 Core\Common.Lib.Client\bin\Debug\netstandard2.0\Common.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Lib.Client">
+      <HintPath>..\..\..\0 Core\Common.Lib.Client\bin\Debug\netstandard2.0\Common.Lib.Client.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

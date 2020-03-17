@@ -1,0 +1,45 @@
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.Lib.Server\bin\Debug\netstandard2.0\Project.Lib.Server.deps.json
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.Lib.Server\bin\Debug\netstandard2.0\Project.Lib.Server.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.Lib.Server\bin\Debug\netstandard2.0\Project.Lib.Server.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.Lib.Server\bin\Debug\netstandard2.0\Common.Lib.DAL.EFCore.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.Lib.Server\bin\Debug\netstandard2.0\Common.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.Lib.Server\bin\Debug\netstandard2.0\_Project1.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.Lib.Server\bin\Debug\netstandard2.0\_Project1.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.Lib.Server\bin\Debug\netstandard2.0\Common.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.Lib.Server\bin\Debug\netstandard2.0\Common.Lib.DAL.EFCore.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.Lib.Server\obj\Debug\netstandard2.0\Project.Lib.Server.csprojAssemblyReference.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.Lib.Server\obj\Debug\netstandard2.0\Project.Lib.Server.AssemblyInfoInputs.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.Lib.Server\obj\Debug\netstandard2.0\Project.Lib.Server.AssemblyInfo.cs
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.Lib.Server\obj\Debug\netstandard2.0\Project.Lib.Server.csproj.CopyComplete
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.Lib.Server\obj\Debug\netstandard2.0\Project.Lib.Server.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.Lib.Server\obj\Debug\netstandard2.0\Project.Lib.Server.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.Lib.Server\bin\Debug\netstandard2.0\Project.Lib.Server.deps.json
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.Lib.Server\bin\Debug\netstandard2.0\Project.Lib.Server.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.Lib.Server\bin\Debug\netstandard2.0\Project.Lib.Server.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.Lib.Server\bin\Debug\netstandard2.0\Common.Lib.DAL.EFCore.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.Lib.Server\bin\Debug\netstandard2.0\Common.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.Lib.Server\bin\Debug\netstandard2.0\_Project1.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.Lib.Server\bin\Debug\netstandard2.0\_Project1.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.Lib.Server\bin\Debug\netstandard2.0\Common.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.Lib.Server\bin\Debug\netstandard2.0\Common.Lib.DAL.EFCore.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.Lib.Server\obj\Debug\netstandard2.0\Project.Lib.Server.csprojAssemblyReference.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.Lib.Server\obj\Debug\netstandard2.0\Project.Lib.Server.AssemblyInfoInputs.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.Lib.Server\obj\Debug\netstandard2.0\Project.Lib.Server.AssemblyInfo.cs
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.Lib.Server\obj\Debug\netstandard2.0\Project.Lib.Server.csproj.CopyComplete
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.Lib.Server\obj\Debug\netstandard2.0\Project.Lib.Server.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.Lib.Server\obj\Debug\netstandard2.0\Project.Lib.Server.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.Lib.Server\bin\Debug\netstandard2.0\Project.Lib.Server.deps.json
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.Lib.Server\bin\Debug\netstandard2.0\Project.Lib.Server.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.Lib.Server\bin\Debug\netstandard2.0\Project.Lib.Server.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.Lib.Server\bin\Debug\netstandard2.0\Common.Lib.DAL.EFCore.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.Lib.Server\bin\Debug\netstandard2.0\Common.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.Lib.Server\bin\Debug\netstandard2.0\_Project1.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.Lib.Server\bin\Debug\netstandard2.0\_Project1.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.Lib.Server\bin\Debug\netstandard2.0\Common.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.Lib.Server\bin\Debug\netstandard2.0\Common.Lib.DAL.EFCore.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.Lib.Server\obj\Debug\netstandard2.0\Project.Lib.Server.csprojAssemblyReference.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.Lib.Server\obj\Debug\netstandard2.0\Project.Lib.Server.AssemblyInfoInputs.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.Lib.Server\obj\Debug\netstandard2.0\Project.Lib.Server.AssemblyInfo.cs
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.Lib.Server\obj\Debug\netstandard2.0\Project.Lib.Server.csproj.CopyComplete
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.Lib.Server\obj\Debug\netstandard2.0\Project.Lib.Server.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.Lib.Server\obj\Debug\netstandard2.0\Project.Lib.Server.pdb

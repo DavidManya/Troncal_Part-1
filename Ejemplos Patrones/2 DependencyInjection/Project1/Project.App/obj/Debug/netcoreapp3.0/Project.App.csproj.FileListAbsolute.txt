@@ -1,0 +1,56 @@
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\bin\Debug\netcoreapp3.0\Project.App.exe
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\bin\Debug\netcoreapp3.0\Project.App.deps.json
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\bin\Debug\netcoreapp3.0\Project.App.runtimeconfig.json
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\bin\Debug\netcoreapp3.0\Project.App.runtimeconfig.dev.json
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\bin\Debug\netcoreapp3.0\Project.App.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\bin\Debug\netcoreapp3.0\Project.App.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\bin\Debug\netcoreapp3.0\Common.Lib.Client.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\bin\Debug\netcoreapp3.0\Common.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\bin\Debug\netcoreapp3.0\Project.Lib.Client.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\bin\Debug\netcoreapp3.0\_Project1.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\bin\Debug\netcoreapp3.0\Project.Lib.Client.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\bin\Debug\netcoreapp3.0\_Project1.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\bin\Debug\netcoreapp3.0\Common.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\bin\Debug\netcoreapp3.0\Common.Lib.Client.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\obj\Debug\netcoreapp3.0\Project.App.csprojAssemblyReference.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\obj\Debug\netcoreapp3.0\Project.App.AssemblyInfoInputs.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\obj\Debug\netcoreapp3.0\Project.App.AssemblyInfo.cs
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\obj\Debug\netcoreapp3.0\Project.App.csproj.CopyComplete
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\obj\Debug\netcoreapp3.0\Project.App.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1.Lib\Project.App\obj\Debug\netcoreapp3.0\Project.App.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Project.App.exe
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Project.App.deps.json
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Project.App.runtimeconfig.json
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Project.App.runtimeconfig.dev.json
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Project.App.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Project.App.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Common.Lib.Client.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Common.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\_Project1.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\_Project1.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Common.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Common.Lib.Client.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.App\obj\Debug\netcoreapp3.0\Project.App.csprojAssemblyReference.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.App\obj\Debug\netcoreapp3.0\Project.App.AssemblyInfoInputs.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.App\obj\Debug\netcoreapp3.0\Project.App.AssemblyInfo.cs
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.App\obj\Debug\netcoreapp3.0\Project.App.csproj.CopyComplete
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.App\obj\Debug\netcoreapp3.0\Project.App.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\DependencyInjection\Project1\Project.App\obj\Debug\netcoreapp3.0\Project.App.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Project.App.exe
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Project.App.deps.json
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Project.App.runtimeconfig.json
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Project.App.runtimeconfig.dev.json
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Project.App.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Project.App.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Common.Lib.Client.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Common.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\_Project1.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\_Project1.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Common.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.App\bin\Debug\netcoreapp3.0\Common.Lib.Client.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.App\obj\Debug\netcoreapp3.0\Project.App.csprojAssemblyReference.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.App\obj\Debug\netcoreapp3.0\Project.App.AssemblyInfoInputs.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.App\obj\Debug\netcoreapp3.0\Project.App.AssemblyInfo.cs
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.App\obj\Debug\netcoreapp3.0\Project.App.csproj.CopyComplete
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.App\obj\Debug\netcoreapp3.0\Project.App.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\2 DependencyInjection\Project1\Project.App\obj\Debug\netcoreapp3.0\Project.App.pdb

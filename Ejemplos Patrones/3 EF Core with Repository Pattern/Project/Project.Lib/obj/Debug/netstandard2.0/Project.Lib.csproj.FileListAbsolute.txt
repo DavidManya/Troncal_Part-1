@@ -1,0 +1,32 @@
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\EF Core with Repository Pattern\Project\Project.Lib\bin\Debug\netstandard2.0\Project.Lib.deps.json
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\EF Core with Repository Pattern\Project\Project.Lib\bin\Debug\netstandard2.0\Project.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\EF Core with Repository Pattern\Project\Project.Lib\bin\Debug\netstandard2.0\Project.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\EF Core with Repository Pattern\Project\Project.Lib\bin\Debug\netstandard2.0\Common.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\EF Core with Repository Pattern\Project\Project.Lib\bin\Debug\netstandard2.0\Common.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\EF Core with Repository Pattern\Project\Project.Lib\obj\Debug\netstandard2.0\Project.Lib.AssemblyInfoInputs.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\EF Core with Repository Pattern\Project\Project.Lib\obj\Debug\netstandard2.0\Project.Lib.AssemblyInfo.cs
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\EF Core with Repository Pattern\Project\Project.Lib\obj\Debug\netstandard2.0\Project.Lib.csproj.CopyComplete
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\EF Core with Repository Pattern\Project\Project.Lib\obj\Debug\netstandard2.0\Project.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\EF Core with Repository Pattern\Project\Project.Lib\obj\Debug\netstandard2.0\Project.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\EF Core with Repository Pattern\Project\Project.Lib\obj\Debug\netstandard2.0\Project.Lib.csprojAssemblyReference.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\bin\Debug\netstandard2.0\Project.Lib.deps.json
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\bin\Debug\netstandard2.0\Project.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\bin\Debug\netstandard2.0\Project.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\bin\Debug\netstandard2.0\Common.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\bin\Debug\netstandard2.0\Common.Lib.pdb
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\obj\Debug\netstandard2.0\Project.Lib.csprojAssemblyReference.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\obj\Debug\netstandard2.0\Project.Lib.AssemblyInfoInputs.cache
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\obj\Debug\netstandard2.0\Project.Lib.AssemblyInfo.cs
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\obj\Debug\netstandard2.0\Project.Lib.csproj.CopyComplete
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\obj\Debug\netstandard2.0\Project.Lib.dll
+C:\Dev\NetExamples\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\obj\Debug\netstandard2.0\Project.Lib.pdb
+C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\bin\Debug\netstandard2.0\Project.Lib.deps.json
+C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\bin\Debug\netstandard2.0\Project.Lib.dll
+C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\bin\Debug\netstandard2.0\Project.Lib.pdb
+C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\bin\Debug\netstandard2.0\Common.Lib.dll
+C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\bin\Debug\netstandard2.0\Common.Lib.pdb
+C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\obj\Debug\netstandard2.0\Project.Lib.AssemblyInfoInputs.cache
+C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\obj\Debug\netstandard2.0\Project.Lib.AssemblyInfo.cs
+C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\obj\Debug\netstandard2.0\Project.Lib.csproj.CopyComplete
+C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\obj\Debug\netstandard2.0\Project.Lib.dll
+C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\3 EF Core with Repository Pattern\Project\Project.Lib\obj\Debug\netstandard2.0\Project.Lib.pdb

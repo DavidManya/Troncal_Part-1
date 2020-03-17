@@ -1,0 +1,59 @@
+0) Requisitos
+   C# Básico (Clases, Diccionarios, LINQ)
+   Tutorial EF Core 
+   Patrón Repositorio
+   Inyección de Dependencias
+   Patrón MVVM
+   WPF Básico
+
+   Explicación: vampos a aplicar los conceptos estudiados en los requisitos creando
+   una aplicación que es a la vez cliente y servidor
+   
+1) Solucion y proyectos
+   Traer del Git el 0 Core y recompilarlo
+
+   Academy.Lib -> Common.Lib.dll
+   Academy.Lib.DAL -> Entity Framework Core(nuget),
+	  	      Microsoft.Extensions.Configuration.FileExtensions(nuget),
+		      Microsoft.Extensions.Configuration.Json (nuget),
+                      Common.Lib.dll, 
+                      Common.Lib.DAL.EFCore.dll, 
+                      Academy.Lib (project)
+   Academy.App.WPF -> Entity Framework Core(nuget),
+                      Entity Framework Core SQLite(nuget),
+                      Entity Framework Core Tools(nuget),
+                      Common.Lib.dll, 
+                      Common.Lib.DAL.EFCore.dll, 
+                      Academy.Lib (project),
+		      Academy.Lib.DAL
+
+2) Modelos
+   Students
+   Subjects
+   Exams
+   StudentExams
+   StudentSubjects
+
+3) DbContext
+   add-migration InitialMigration
+   update-database
+
+4) IRepositories
+   IStudentsRepository - FindByDni
+
+5) DAL (Repositories)
+   StudentsRepository	
+
+6) WPF
+   Bootstrapper
+   ViewModelBase
+   Views, ViewModels
+
+   hay que poner ell appsettings.json tanto en el directorio root del WPF como en el de ejecución
+   que normalente está en bin\debug\netstandard2.0
+   lo mismo para la Base de datos que genera el EF 
+   para esto es úttil darle al botón de ver archivos ocultos de la Solutioh de Visual Studio 
+   (buscar en google no me preguntéis!) y luego volver a quitarlos para que no molesten
+
+7) Lógica de negocio (dominio) de las Entidades (modelos)
+  

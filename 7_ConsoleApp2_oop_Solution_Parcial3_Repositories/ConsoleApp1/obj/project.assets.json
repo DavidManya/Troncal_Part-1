@@ -1,0 +1,106 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "Academy.Lib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Academy.Lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Academy.Lib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Academy.Lib/1.0.0": {
+      "type": "project",
+      "path": "../StudentsFromHell.Lib/Academy.Lib.csproj",
+      "msbuildProject": "../StudentsFromHell.Lib/Academy.Lib.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "Academy.Lib >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\dmany\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\dmany\\Desktop\\TrainingExample1_AverageMarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\ConsoleApp1\\Academy.App.csproj",
+      "projectName": "Academy.App",
+      "projectPath": "C:\\Users\\dmany\\Desktop\\TrainingExample1_AverageMarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\ConsoleApp1\\Academy.App.csproj",
+      "packagesPath": "C:\\Users\\dmany\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dmany\\Desktop\\TrainingExample1_AverageMarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\ConsoleApp1\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\dmany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {
+            "C:\\Users\\dmany\\Desktop\\TrainingExample1_AverageMarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj": {
+              "projectPath": "C:\\Users\\dmany\\Desktop\\TrainingExample1_AverageMarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.1, 3.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.0.2, 3.0.2]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
