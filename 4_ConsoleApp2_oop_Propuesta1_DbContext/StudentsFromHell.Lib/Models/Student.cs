@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Academy.Lib.Context;
+using Academy.Lib.Infrastructure;
 
 namespace Academy.Lib.Models
 {
@@ -11,39 +12,64 @@ namespace Academy.Lib.Models
         public string LastName { get; set; }
         public string FirstName { get; set; }
 
-        public static bool ValidateDni(string dni)
+        #region Statics
+        public static ValidationResult<string> ValidateDni(string dni, bool checkDniValid)
         {
+            var output = new ValidationResult<string>
+            {
+                IsSuccess = true,
+            };
+            
             if (string.IsNullOrEmpty(dni))
             {
-                return false;
+                output.IsSuccess = false;
+                output.Messages.Add("El DNI no está informado");
             }
-            else if (dni.Length != 9)
+
+            if (dni.Length != 9)
             {
-                return false;
+                output.IsSuccess = false;
+                output.Messages.Add("El DNI está en un formato incorrecto, vuelva a escribirlo");
             }
-            else
-            {
-                return true;
-            }
+
+            return output;
+
         }
 
-        public static bool ValidateName(string name)
+        public static ValidationResult<string> ValidateName(string name)
         {
-            return !string.IsNullOrEmpty(name);
+            var output = new ValidationResult<string>
+            {
+                IsSuccess = true,
+            };
+
+            #region check format
+
+            if (string.IsNullOrEmpty(name))
+            {
+                output.IsSuccess = false;
+                output.Messages.Add("El nombre no está completo. Vuelva a escribirlo");
+            }
+            #endregion
+
+            if (output.IsSuccess)
+                output.ValidatedResult = name;
+
+            return output;
         }
 
         public bool Save()
         {
-            var validation = ValidateDni(this.Dni);
-            if (!validation)
+            var validation = ValidateDni(this.Dni, true);
+            if (!validation.IsSuccess)
                 return false;
 
             validation = ValidateName(this.FirstName);
-            if (!validation)
+            if (!validation.IsSuccess)
                 return false;
 
             validation = ValidateName(this.LastName);
-            if (!validation)
+            if (!validation.IsSuccess)
                 return false;
 
             if (this.Id == null)
@@ -57,5 +83,6 @@ namespace Academy.Lib.Models
 
             return true;
         }
+        #endregion
     }
 }

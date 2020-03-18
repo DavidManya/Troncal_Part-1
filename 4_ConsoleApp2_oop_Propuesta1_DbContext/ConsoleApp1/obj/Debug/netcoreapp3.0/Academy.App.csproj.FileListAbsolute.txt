@@ -12,3 +12,5 @@ C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\Con
 C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.csproj.CopyComplete
 C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.dll
 C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.pdb
+C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.csproj.CoreCompileInputs.cache
+C:\Users\dmany\Desktop\Troncal_Part 1\4_ConsoleApp2_oop_Propuesta1_DbContext\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.genruntimeconfig.cache

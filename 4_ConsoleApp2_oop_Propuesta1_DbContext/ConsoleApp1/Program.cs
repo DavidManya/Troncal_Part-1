@@ -1,4 +1,5 @@
 ﻿using Academy.Lib.Context;
+using Academy.Lib.Infrastructure;
 using Academy.Lib.Models;
 using System;
 using System.Collections.Generic;
@@ -253,6 +254,7 @@ namespace ConsoleApp1
             {
                 Console.WriteLine();
                 ShowStudentsMenuOptions();
+                Console.WriteLine();
 
                 var keepdoing = true;
 
@@ -336,9 +338,16 @@ namespace ConsoleApp1
                 Console.WriteLine();
                 Console.WriteLine("-- Listado de Alumnos --");
 
-                foreach (KeyValuePair<string, Student> student in DbContext.students)
+                /*foreach (KeyValuePair<string, Student> student in DbContext.students)
                 {
                     Console.WriteLine("{0}: {1}, {2}", student.Key, student.Value.LastName, student.Value.FirstName);
+                }*/
+                //Llista d'alumnes ordenada per ordre alfabètic
+                var query = from x in DbContext.students orderby x.Value.LastName, x.Value.FirstName select (x.Key, x.Value.FirstName, x.Value.LastName);
+
+                foreach (var (Key, FirstName, LastName) in query)
+                {
+                    Console.WriteLine("{0}: {1}, {2}", Key, LastName, FirstName);
                 }
 
                 Console.WriteLine();
@@ -362,18 +371,14 @@ namespace ConsoleApp1
                     {
                         Console.WriteLine("No ha introducido datos");
                     }
-                    else if (words[0] == "m")
+                    else if (words[0] == "m" || words[0] == "M")
                     {
                         keepdoing = false;
                         break;
                     }
-                    else if (words[0] == "e")
+                    else if (words[0] == "e" || words[0] =="E")
                     {
                         ExitConsole();
-                    }
-                    else if (!Student.ValidateDni(words[0]))
-                    {
-                        Console.WriteLine("El DNI está en un formato incorrecto");
                     }
                     else if (words.Length == 1 || words.Length == 2)
                     {
@@ -381,30 +386,40 @@ namespace ConsoleApp1
                     }
                     else
                     {
-                        var search = DbContext.students.Where(p => p.Key.Equals(words[0]));
+                        ValidationResult<string> dniValRes = Student.ValidateDni(words[0], true);
 
-                        if (search.Count() > 0)
+                        if (!dniValRes.IsSuccess)
                         {
-                            Console.WriteLine("El DNI introducido, ya existe");
+                            foreach (var msg in dniValRes.Messages)
+                                Console.WriteLine(msg);
                         }
                         else
                         {
-                            var student = new Student
-                            {
-                                Dni = words[0],
-                                FirstName = words[1],
-                                LastName = words[2]
-                            };
+                            var search = DbContext.students.Where(p => p.Key.Equals(words[0]));
 
-                            if (student.Save())
+                            if (search.Count() > 0)
                             {
-                                Console.WriteLine("- Alta correcta -");
+                                Console.WriteLine("El DNI introducido, ya existe");
                             }
                             else
                             {
-                                Console.WriteLine("- Alta incorrecta -");
+                                var student = new Student
+                                {
+                                    Dni = words[0],
+                                    FirstName = words[1],
+                                    LastName = words[2]
+                                };
+
+                                if (student.Save())
+                                {
+                                    Console.WriteLine("- Alta correcta -");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("- Alta incorrecta -");
+                                }
+                                Console.WriteLine();
                             }
-                            Console.WriteLine();
                         }
 
                     }
@@ -432,18 +447,14 @@ namespace ConsoleApp1
                     {
                         Console.WriteLine("No ha introducido datos");
                     }
-                    else if (words[0] == "m")
+                    else if (words[0] == "m" || words[0] == "M")
                     {
                         keepdoing = false;
                         break;
                     }
-                    else if (words[0] == "e")
+                    else if (words[0] == "e" || words[0] =="E")
                     {
                         ExitConsole();
-                    }
-                    else if (!Student.ValidateDni(words[0]))
-                    {
-                        Console.WriteLine("El DNI guardado está en un formato incorrecto");
                     }
                     else if (words.Length == 1)
                     {
@@ -455,29 +466,49 @@ namespace ConsoleApp1
                     }
                     else
                     {
-                        var search = DbContext.students.Where(p => p.Key.Equals(words[0]));
-                        if (search.Count() == 0)
+                        ValidationResult<string> dniValReso = Student.ValidateDni(words[0], true);
+
+                        if (!dniValReso.IsSuccess)
                         {
-                            Console.WriteLine("El DNI introducido, no está guardado");
+                            foreach (var msg in dniValReso.Messages)
+                                Console.WriteLine(msg);
                         }
                         else
                         {
-                            var student = new Student
+                            ValidationResult<string> dniValResn = Student.ValidateDni(words[1], true);
+
+                            if (!dniValResn.IsSuccess)
                             {
-                                Id = words[0],
-                                Dni = words[1],
-                                FirstName = words[2],
-                                LastName = words[3]
-                            };
-                            if (student.Save())
-                            {
-                                Console.WriteLine("- Modificación correcta -");
+                                foreach (var msg in dniValResn.Messages)
+                                    Console.WriteLine(msg);
                             }
                             else
                             {
-                                Console.WriteLine("- Modificación incorrecta -");
+                                var search = DbContext.students.Where(p => p.Key.Equals(words[0]));
+                                if (search.Count() == 0)
+                                {
+                                    Console.WriteLine("El DNI introducido, no está guardado");
+                                }
+                                else
+                                {
+                                    var student = new Student
+                                    {
+                                        Id = words[0],
+                                        Dni = words[1],
+                                        FirstName = words[2],
+                                        LastName = words[3]
+                                    };
+                                    if (student.Save())
+                                    {
+                                        Console.WriteLine("- Modificación correcta -");
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("- Modificación incorrecta -");
+                                    }
+                                    Console.WriteLine();
+                                }
                             }
-                            Console.WriteLine();
                         }
                     }
                 }
@@ -493,7 +524,8 @@ namespace ConsoleApp1
                 Console.WriteLine("-- Eliminar Alumnos --");
                 Console.WriteLine("Introduzca el DNI y pulse enter");
                 Console.WriteLine("- Para volver al menú anterior pulse m");
-                
+                Console.WriteLine();
+
                 var keepdoing = true;
 
                 while (keepdoing)
@@ -504,51 +536,57 @@ namespace ConsoleApp1
                     {
                         Console.WriteLine("El DNI no está informado");
                     }
-                    else if (text == "m")
+                    else if (text == "m" || text == "M")
                     {
                         keepdoing = false;
                         break;
                     }
-                    else if (text == "e")
+                    else if (text == "e" || text =="E")
                     {
                         ExitConsole();
                     }
-                    else if (!Student.ValidateDni(text))
-                    {
-                        Console.WriteLine("El DNI está en un formato incorrecto");
-                    }
                     else
                     {
-                        var search1 = DbContext.students.Where(p => p.Key.Equals(text));
+                        ValidationResult<string> dniValRes = Student.ValidateDni(text, true);
 
-                        if (search1.Count() == 0)
+                        if (!dniValRes.IsSuccess)
                         {
-                            Console.WriteLine("El DNI introducido no está en la base de datos");
+                            foreach (var msg in dniValRes.Messages)
+                                Console.WriteLine(msg);
                         }
                         else
                         {
-                            DbContext.students.Remove(text);
+                            var search1 = DbContext.students.Where(p => p.Key.Equals(text));
 
-                            var search2 = DbContext.courses.Where(p => p.Key.Item2.Contains(text));
-                            if (search2.Count() > 0)
+                            if (search1.Count() == 0)
                             {
-                                foreach (var result2 in search2)
+                                Console.WriteLine("El DNI introducido no está en la base de datos");
+                            }
+                            else
+                            {
+                                DbContext.students.Remove(text);
+
+                                var search2 = DbContext.courses.Where(p => p.Key.Item2.Contains(text));
+                                if (search2.Count() > 0)
                                 {
-                                    DbContext.courses.Remove(result2.Key);
+                                    foreach (var result2 in search2)
+                                    {
+                                        DbContext.courses.Remove(result2.Key);
+                                    }
+                                }
+
+                                var search3 = DbContext.exams.Where(p => p.Key.Equals(text));
+                                if (search3.Count() > 0)
+                                {
+                                    foreach (var result3 in search3)
+                                    {
+                                        DbContext.exams.Remove(result3.Key);
+                                    }
                                 }
                             }
-
-                            var search3 = DbContext.exams.Where(p => p.Key.Equals(text));
-                            if (search3.Count() > 0)
-                            {
-                                foreach (var result3 in search3)
-                                {
-                                    DbContext.exams.Remove(result3.Key);
-                                }
-                            }
+                            Console.WriteLine("- Baja correcta -");
+                            Console.WriteLine();
                         }
-                        Console.WriteLine("- Baja correcta -");
-                        Console.WriteLine();
                     }
                 }
 
@@ -562,6 +600,7 @@ namespace ConsoleApp1
                 Console.WriteLine("-- Añadir Alumnos a Cursos --");
                 Console.WriteLine("Introduzca 4 campos separados por comas con el Código del Curso, DNI, Fecha alta y Asiento, y pulse enter");
                 Console.WriteLine("- Para volver al menú anterior pulse m");
+                Console.WriteLine();
                 var keepdoing = true;
 
                 while (keepdoing)
@@ -575,22 +614,18 @@ namespace ConsoleApp1
                     {
                         Console.WriteLine("No ha introducido datos");
                     }
-                    else if (words[0] == "m")
+                    else if (words[0] == "m" || words[0] == "M")
                     {
                         keepdoing = false;
                         break;
                     }
-                    else if (words[0] == "e")
+                    else if (words[0] == "e" || words[0] == "E")
                     {
                         ExitConsole();
                     }
                     else if (words.Length == 1 || words.Length == 2 || words.Length == 3)
                     {
                         Console.WriteLine("No ha informado todos los datos");
-                    }
-                    else if (!Student.ValidateDni(words[1]))
-                    {
-                        Console.WriteLine("El DNI está en un formato incorrecto");
                     }
                     else if (!DateTime.TryParse(words[2], out dateTime))
                     {
@@ -602,39 +637,61 @@ namespace ConsoleApp1
                     }
                     else
                     {
-                        var search = DbContext.courses.Where(p => p.Key.Item1.Equals(Convert.ToInt32(words[0])) && p.Key.Item2.Equals(words[1]));
-
-                        if (search.Count() > 0)
+                        var subject = new Subject
                         {
-                            Console.WriteLine("El Alumno ya está matriculado en este Curso");
+                            Id = words[0]
+                        };
+
+                        var tuple = new Tuple<int, string>(Convert.ToInt32(words[0]), words[1]);
+
+                        var course = new Course
+                        {
+                            ChairNumber = asiento
+                        };
+
+                        if (!DbContext.ExistSubject(subject))
+                        {
+                            Console.WriteLine("El código de la asignatura introducido no está en la base de datos");
+                        }
+                        else if (!DbContext.ExistChair(tuple, course))
+                        {
+                            Console.WriteLine("El asiento introducido ya está asignado");
                         }
                         else
                         {
-                            var tuple = new Tuple<int, string>(Convert.ToInt32(words[0]), words[1]);
+                            ValidationResult<string> dniValRes = Student.ValidateDni(words[1], true);
 
-                            var student = new Student
+                            if (!dniValRes.IsSuccess)
                             {
-                                Dni = words[1]
-                            };
-
-                            var subject = new Subject
-                            {
-                                Id = words[0]
-                            };
-
-                            if (!DbContext.ExistSubject(subject))
-                            {
-                                Console.WriteLine("El código de la asignatura introducido no está en la base de datos");
-                            }
-                            else if (!DbContext.ExistStudent(student))
-                            {
-                                Console.WriteLine("El alumno introducido no está en la base de datos");
+                                foreach (var msg in dniValRes.Messages)
+                                    Console.WriteLine(msg);
                             }
                             else
                             {
-                                DbContext.courses.Add(tuple, new Course { DateEnrolment = dateTime, ChairNumber = asiento });
-                                Console.WriteLine("- Alta Curso correcta -");
-                                Console.WriteLine();
+                                var student = new Student
+                                {
+                                    Dni = words[1]
+                                };
+
+                                if (!DbContext.ExistStudent(student))
+                                {
+                                    Console.WriteLine("El alumno introducido no está en la base de datos");
+                                }
+                                else
+                                {
+                                    var search = DbContext.courses.Where(p => p.Key.Item1.Equals(Convert.ToInt32(words[0])) && p.Key.Item2.Equals(words[1]));
+
+                                    if (search.Count() > 0)
+                                    {
+                                        Console.WriteLine("El Alumno ya está matriculado en este Curso");
+                                    }
+                                    else
+                                    {
+                                        DbContext.courses.Add(tuple, new Course { DateEnrolment = dateTime, ChairNumber = asiento });
+                                        Console.WriteLine("- Alta Curso correcta -");
+                                        Console.WriteLine();
+                                    }
+                                }
                             }
                         }
                     }
@@ -661,36 +718,43 @@ namespace ConsoleApp1
                     {
                         Console.WriteLine("El DNI no está informado");
                     }
-                    else if (text == "m")
+                    else if (text == "m" || text == "M")
                     {
                         keepdoing = false;
                         break;
                     }
-                    else if (text == "e")
+                    else if (text == "e" || text == "E")
                     {
                         ExitConsole();
                     }
-                    else if (!Student.ValidateDni(text))
-                    {
-                        Console.WriteLine("El DNI está en un formato incorrecto");
-                    }
                     else
                     {
-                        var search = DbContext.courses.Where(p => p.Key.Item1.Equals(text));
+                        ValidationResult<string> dniValRes = Student.ValidateDni(text, true);
 
-                        Console.WriteLine("-- Listado de Asignaturas del Alumno (Nombre/Fecha Alta) --");
-
-                        foreach (var result in search)
+                        if (!dniValRes.IsSuccess)
                         {
-                            var search2 = DbContext.subjects.Where(x => x.Key.Equals(result.Key.Item2)).Select(x => x.Value.Name);
-                            var name = search2.SingleOrDefault();
-                            Console.WriteLine("{0} - {1}", name, Convert.ToString(result.Value.DateEnrolment));
+                            foreach (var msg in dniValRes.Messages)
+                                Console.WriteLine(msg);
                         }
-                        Console.WriteLine();
+                        else
+                        {
+                            var search = DbContext.courses.Where(p => p.Key.Item2.Equals(text));
+
+                            Console.WriteLine();
+                            Console.WriteLine("-- Listado de Asignaturas del Alumno (Nombre/Fecha Alta) --");
+
+                            foreach (var result in search)
+                            {
+                                var search2 = DbContext.subjects.Where(x => x.Value.SubjectID.Equals(result.Key.Item1)).Select(x => x.Value.Name);
+                                var name = search2.FirstOrDefault();
+                                Console.WriteLine("{0} - {1}", name, Convert.ToString(result.Value.DateEnrolment));
+                            }
+                            Console.WriteLine();
+                        }
                     }
                 }
 
-                ShowMainMenu();
+                ShowStudentsMenuOptions();
                 Console.WriteLine();
             }
 
@@ -723,22 +787,18 @@ namespace ConsoleApp1
                     {
                         Console.WriteLine("No ha introducido datos");
                     }
-                    else if (words[0] == "m")
+                    else if (words[0] == "m" || words[0] == "M")
                     {
                         keepdoing = false;
                         break;
                     }
-                    else if (words[0] == "e")
+                    else if (words[0] == "e" || words[0] == "E")
                     {
                         ExitConsole();
                     }
                     else if (words.Length == 1 || words.Length == 2 || words.Length == 3)
                     {
                         Console.WriteLine("No ha informado todos los datos");
-                    }
-                    else if (!Student.ValidateDni(words[1]))
-                    {
-                        Console.WriteLine("El DNI está en un formato incorrecto");
                     }
                     else if (!DateTime.TryParse(words[2], out data))
                     {
@@ -750,38 +810,51 @@ namespace ConsoleApp1
                     }
                     else
                     {
-                        var student = new Student
-                        {
-                            Dni = words[1]
-                        };
+                        ValidationResult<string> dniValRes = Student.ValidateDni(words[1], true);
 
-                        var subject = new Subject
+                        if (!dniValRes.IsSuccess)
                         {
-                            Id = words[0]
-                        };
-
-                        if (!DbContext.ExistSubject(subject))
-                        {
-                            Console.WriteLine("El código de la asignatura introducido no está en la base de datos");
-                        }
-                        else if (!DbContext.ExistStudent(student))
-                        {
-                            Console.WriteLine("El alumno introducido no está en la base de datos");
+                            foreach (var msg in dniValRes.Messages)
+                                Console.WriteLine(msg);
                         }
                         else
                         {
-                            var search = DbContext.exams.Where(p => p.Value.SubjectID.Equals(words[0]) && p.Value.DniID.Equals(words[1]) && p.Value.DateExam.Equals(words[2]));
-
-                            if (search.Count() > 0)
+                            var student = new Student
                             {
-                                Console.WriteLine("Esta Nota ya estaba añadida");
+                                Dni = words[1]
+                            };
+
+                            var subject = new Subject
+                            {
+                                Id = words[0]
+                            };
+
+                            if (!DbContext.ExistSubject(subject))
+                            {
+                                Console.WriteLine("El código de la asignatura introducido no está en la base de datos");
+                            }
+                            else if (!DbContext.ExistStudent(student))
+                            {
+                                Console.WriteLine("El alumno introducido no está en la base de datos");
                             }
                             else
                             {
-                                DbContext.exams.Add(clau, new Exam { SubjectID = Convert.ToInt32(words[0]), DniID = words[1], DateExam = Convert.ToDateTime(words[2]), Note = nota });
-                                Console.WriteLine("- Nota añadida correctamente -");
+                                var search = DbContext.exams.Where(p => p.Value.SubjectID.Equals(words[0]) && p.Value.DniID.Equals(words[1]) && p.Value.DateExam.Equals(words[2]));
+
+                                if (search.Count() > 0)
+                                {
+                                    Console.WriteLine("Esta Nota ya estaba añadida");
+                                }
+                                else
+                                {
+                                    DbContext.exams.Add(clau, new Exam { SubjectID = Convert.ToInt32(words[0]), DniID = words[1], DateExam = Convert.ToDateTime(words[2]), Note = nota });
+                                    Console.WriteLine("- Nota añadida correctamente -");
+                                }
                             }
                         }
+
+
+
                     }
                 }
 
@@ -795,6 +868,7 @@ namespace ConsoleApp1
                 Console.WriteLine("-- Mostrar Notas del Alumno --");
                 Console.WriteLine("Introduzca el DNI y pulse enter");
                 Console.WriteLine("- Para volver al menú anterior pulse m");
+                Console.WriteLine();
 
                 var keepdoing = true;
 
@@ -806,38 +880,43 @@ namespace ConsoleApp1
                     {
                         Console.WriteLine("El DNI no está informado");
                     }
-                    else if (text == "m")
+                    else if (text == "m" || text == "M")
                     {
                         keepdoing = false;
                         break;
                     }
-                    else if (text == "e")
+                    else if (text == "e" || text == "E")
                     {
                         ExitConsole();
                     }
-                    else if (!Student.ValidateDni(text))
-                    {
-                        Console.WriteLine("El DNI está en un formato incorrecto");
-                    }
                     else
                     {
-                        var search = DbContext.exams.Where(p => p.Value.DniID.Equals(text));
-                        if (search.Count() == 0)
+                        ValidationResult<string> dniValRes = Student.ValidateDni(text, true);
+
+                        if (!dniValRes.IsSuccess)
                         {
-                            Console.WriteLine("No se han encontrao Notas todavía");
+                            foreach (var msg in dniValRes.Messages)
+                                Console.WriteLine(msg);
                         }
                         else
                         {
-                            Console.WriteLine("-- Listado de Notas del Alumno (Asignatura/Nota) --");
-
-                            foreach (var result in search)
+                            var search = DbContext.exams.Where(p => p.Value.DniID.Equals(text));
+                            if (search.Count() == 0)
                             {
-                                var search2 = DbContext.subjects.Where(x => x.Value.SubjectID.Equals(result.Value.SubjectID)).Select(x => x.Value.Name);
-                                var name = search2.SingleOrDefault();
-                                Console.WriteLine("{0} - {1}", name, result.Value.Note);
+                                Console.WriteLine("No se han encontrao Notas todavía");
+                            }
+                            else
+                            {
+                                Console.WriteLine("-- Listado de Notas del Alumno (Asignatura/Nota) --");
+
+                                foreach (var result in search)
+                                {
+                                    var search2 = DbContext.subjects.Where(x => x.Value.SubjectID.Equals(result.Value.SubjectID)).Select(x => x.Value.Name);
+                                    var name = search2.SingleOrDefault();
+                                    Console.WriteLine("{0} - {1}", name, result.Value.Note);
+                                }
                             }
                         }
-
                     }
                 }
 
@@ -849,6 +928,7 @@ namespace ConsoleApp1
             {
                 Console.WriteLine();
                 ShowStatsMenuOptions();
+                Console.WriteLine();
 
                 while (true)
                 {

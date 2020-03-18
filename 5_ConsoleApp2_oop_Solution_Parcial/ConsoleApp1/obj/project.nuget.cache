@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "a86DCh18eg0eAUf9Tk6KIdv2kmE5Ezh2TrDg5xyZ1XMmdXlrr2RtSw4GN28fPXxYGX/L9wRdYcZilk4QUnXtdg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\5_ConsoleApp2_oop_Solution_Parcial\\ConsoleApp1\\Academy.App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dmany\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\dmany\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\dmany\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\dmany\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,6 +1,7 @@
 ﻿using Academy.Lib.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Academy.Lib.Context
 {
@@ -23,14 +24,13 @@ namespace Academy.Lib.Context
 
         public static bool UpdateStudent(Student student)
         {
-            if (student.Id != null && students.ContainsKey(student.Id))
+            if (student.Id != null & students.ContainsKey(student.Id))
             {
                 var studentInMemory = students[student.Id];
 
                 if (student != studentInMemory)
                 {
-                    students.Remove(student.Id);
-                    AddStudent(student);
+                    students[student.Id] = student;
                 }
             }
             else
@@ -57,14 +57,13 @@ namespace Academy.Lib.Context
 
         public static bool UpdateSubject(Subject subject)
         {
-            if (subject.Id != null && subjects.ContainsKey(subject.Id))
+            if (subject.Id != null & subjects.ContainsKey(subject.Id))
             {
                 var subjectInMemory = subjects[subject.Id];
 
                 if (subject != subjectInMemory)
                 {
-                    subjects.Remove(subject.Id);
-                    AddSubject(subject);
+                    subjects[subject.Id] = subject;
                 }
             }
             else
@@ -95,6 +94,19 @@ namespace Academy.Lib.Context
                 return false;
             }
             
+            return true;
+        }
+
+        public static bool ExistChair(Tuple<int, string> tuple, Course course)
+        {
+            foreach (KeyValuePair<Tuple<int, string>, Course> classroom in courses)
+            {
+                if (classroom.Key.Item1 == tuple.Item1 & classroom.Value.ChairNumber == course.ChairNumber)
+                {
+                    return false;
+                }
+            }
+
             return true;
         }
         #endregion
