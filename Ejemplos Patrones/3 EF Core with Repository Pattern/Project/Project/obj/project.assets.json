@@ -2103,7 +2103,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.0.0": {
-      "sha512": "CCf4NjmDOoise7FAij2VPuHIgKKsu696vkTwhOkPVQfLsTmB2WLFfQ4yeO5Udtk8FD636UBMx6Y9eovzJKT76A==",
+      "sha512": "VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.0.0",
       "files": [
@@ -2135,7 +2135,7 @@
       ]
     },
     "Microsoft.Win32.Registry/4.5.0": {
-      "sha512": "vduxuHEqRgRrTE8wYG8Wxj/+6wwzddOmZzjKZx6rFMc/91aUBxI5etAFYxesoNaIja5NpgSTcnk6cN8BeYXf9A==",
+      "sha512": "+FWlwd//+Tt56316p00hVePBCouXyEzT86Jb3+AuRotTND0IYn0OO3obs1gnQEs/txEnt+rF2JBGLItTG+Be6A==",
       "type": "package",
       "path": "microsoft.win32.registry/4.5.0",
       "files": [
@@ -4515,7 +4515,7 @@
       ]
     },
     "System.Security.AccessControl/4.5.0": {
-      "sha512": "6RQtcT+TyDgLUFsAnmmdfRRGdLYKxSZGkSPOd052tvYFxOTMaQb6ANlwhGqZtNO52PosaCoXu7uatFneujAxmA==",
+      "sha512": "vW8Eoq0TMyz5vAG/6ce483x/CP83fgm4SJe5P8Tb1tZaobcvPrbMEL7rhH1DRdrYbbb6F0vq3OlzmK0Pkwks5A==",
       "type": "package",
       "path": "system.security.accesscontrol/4.5.0",
       "files": [
@@ -4627,7 +4627,7 @@
       ]
     },
     "System.Security.Permissions/4.5.0": {
-      "sha512": "vDQ7q30Soe0a1cPhvxn+7IFmMeTG5IP+hTQrnKQDjTNpD2epqwbZSzMM2Git5TXBr4Kwwhc/0SEtJY0qPoiegA==",
+      "sha512": "9gdyuARhUR7H+p5CjyUB/zPk7/Xut3wUSP8NJQB6iZr8L3XUXTMdoLeVAg9N4rqF8oIpE7MpdqHdDHQ7XgJe0g==",
       "type": "package",
       "path": "system.security.permissions/4.5.0",
       "files": [
@@ -4648,7 +4648,7 @@
       ]
     },
     "System.Security.Principal.Windows/4.5.0": {
-      "sha512": "hs2zF4tOQ3V4iQttVnLrnR/i8AOrrAgu2Gmp4/jNaE/+5hiZWDj20FK/m/OW3Itdi9XDvqf55WzHkiWYtOSUNg==",
+      "sha512": "U77HfRXlZlOeIXd//Yoj6Jnk8AXlbeisf1oq1os+hxOGVnuG+lGSfGqTwTZBoORFF6j/0q7HXIl8cqwQ9aUGqQ==",
       "type": "package",
       "path": "system.security.principal.windows/4.5.0",
       "files": [
@@ -4800,7 +4800,7 @@
       ]
     },
     "System.Text.Encoding.CodePages/4.5.0": {
-      "sha512": "16EVkWmNnoH3/Yj9c5s5VuLK5Uv/Dnkc3P2kMmnD7wJcUuvcHVvM2IhVJanf2hHRZUitH+cIkPCPHrBoCXc7Rw==",
+      "sha512": "S0wEUiKcLvRlkFUXca8uio1UQ5bYQzYgOmOKtCqaBQC3GR9AJjh43otcM32IGsAyvadFTaAMw9Irm6dS4Evfng==",
       "type": "package",
       "path": "system.text.encoding.codepages/4.5.0",
       "files": [
@@ -5472,27 +5472,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\josef\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\dmany\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project\\Project.Web.csproj",
+      "projectUniqueName": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project\\Project.Web.csproj",
       "projectName": "Project.Web",
-      "projectPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project\\Project.Web.csproj",
-      "packagesPath": "C:\\Users\\josef\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project\\obj\\",
+      "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project\\Project.Web.csproj",
+      "packagesPath": "C:\\Users\\dmany\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\josef\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\dmany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
@@ -5504,11 +5497,11 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project.Lib.DA.EFCore\\Project.Lib.DAL.EFCore.csproj": {
-              "projectPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project.Lib.DA.EFCore\\Project.Lib.DAL.EFCore.csproj"
+            "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project.Lib.DA.EFCore\\Project.Lib.DAL.EFCore.csproj": {
+              "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project.Lib.DA.EFCore\\Project.Lib.DAL.EFCore.csproj"
             },
-            "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project.Lib\\Project.Lib.csproj": {
-              "projectPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project.Lib\\Project.Lib.csproj"
+            "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project.Lib\\Project.Lib.csproj": {
+              "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project.Lib\\Project.Lib.csproj"
             }
           }
         }
@@ -5561,6 +5554,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.1, 3.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.0.3, 3.0.3]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -5569,7 +5580,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

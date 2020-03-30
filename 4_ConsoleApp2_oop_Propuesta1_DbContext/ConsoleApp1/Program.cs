@@ -343,11 +343,11 @@ namespace ConsoleApp1
                     Console.WriteLine("{0}: {1}, {2}", student.Key, student.Value.LastName, student.Value.FirstName);
                 }*/
                 //Llista d'alumnes ordenada per ordre alfabètic
-                var query = from x in DbContext.students orderby x.Value.LastName, x.Value.FirstName select (x.Key, x.Value.FirstName, x.Value.LastName);
+                var query = from x in DbContext.students orderby x.Value.LastName, x.Value.FirstName select x;
 
-                foreach (var (Key, FirstName, LastName) in query)
+                foreach (var x in query)
                 {
-                    Console.WriteLine("{0}: {1}, {2}", Key, LastName, FirstName);
+                    Console.WriteLine("{0}: {1}, {2}", x.Key, x.Value.LastName, x.Value.FirstName);
                 }
 
                 Console.WriteLine();
@@ -390,7 +390,7 @@ namespace ConsoleApp1
 
                         if (!dniValRes.IsSuccess)
                         {
-                            foreach (var msg in dniValRes.Messages)
+                            foreach (var msg in dniValRes.Errors)
                                 Console.WriteLine(msg);
                         }
                         else
@@ -470,7 +470,7 @@ namespace ConsoleApp1
 
                         if (!dniValReso.IsSuccess)
                         {
-                            foreach (var msg in dniValReso.Messages)
+                            foreach (var msg in dniValReso.Errors)
                                 Console.WriteLine(msg);
                         }
                         else
@@ -479,7 +479,7 @@ namespace ConsoleApp1
 
                             if (!dniValResn.IsSuccess)
                             {
-                                foreach (var msg in dniValResn.Messages)
+                                foreach (var msg in dniValResn.Errors)
                                     Console.WriteLine(msg);
                             }
                             else
@@ -551,7 +551,7 @@ namespace ConsoleApp1
 
                         if (!dniValRes.IsSuccess)
                         {
-                            foreach (var msg in dniValRes.Messages)
+                            foreach (var msg in dniValRes.Errors)
                                 Console.WriteLine(msg);
                         }
                         else
@@ -663,7 +663,7 @@ namespace ConsoleApp1
 
                             if (!dniValRes.IsSuccess)
                             {
-                                foreach (var msg in dniValRes.Messages)
+                                foreach (var msg in dniValRes.Errors)
                                     Console.WriteLine(msg);
                             }
                             else
@@ -733,7 +733,7 @@ namespace ConsoleApp1
 
                         if (!dniValRes.IsSuccess)
                         {
-                            foreach (var msg in dniValRes.Messages)
+                            foreach (var msg in dniValRes.Errors)
                                 Console.WriteLine(msg);
                         }
                         else
@@ -814,7 +814,7 @@ namespace ConsoleApp1
 
                         if (!dniValRes.IsSuccess)
                         {
-                            foreach (var msg in dniValRes.Messages)
+                            foreach (var msg in dniValRes.Errors)
                                 Console.WriteLine(msg);
                         }
                         else
@@ -895,7 +895,7 @@ namespace ConsoleApp1
 
                         if (!dniValRes.IsSuccess)
                         {
-                            foreach (var msg in dniValRes.Messages)
+                            foreach (var msg in dniValRes.Errors)
                                 Console.WriteLine(msg);
                         }
                         else

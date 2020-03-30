@@ -1,29 +1,104 @@
-﻿using Academy.Lib.Context;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Academy.Lib.Context;
 using Academy.Lib.Infrastructure;
-using System;
 
 namespace Academy.Lib.Models
 {
     public class Subject : Entity
     {
         public string Name { get; set; }
+        public string Teacher { set; get; }
 
-        
-        public void ValidateName(ValidationResult validationResult)
+        //public Guid Guid { get; private set; }
+
+        public void ValidateSub(ValidationResult validationResult)
         {
-            validationResult.IsSuccess = true;
+            var vr = ValidateSub(this.Name);
 
-            if (!string.IsNullOrEmpty(this.Name))
+            if (!vr.IsSuccess)
             {
                 validationResult.IsSuccess = false;
-                validationResult.Errors.Add("el nombre de la asignatura no puede estar vacío");
+                validationResult.Errors.AddRange(vr.Errors);
+            }
+        }
+        public void ValidateTeacher(ValidationResult validationResult)
+        {
+            var vr = ValidateTeacher(this.Teacher);
+
+            if (!vr.IsSuccess)
+            {
+                validationResult.IsSuccess = false;
+                validationResult.Errors.AddRange(vr.Errors);
             }
 
-            if (DbContext.SubjectsByName.ContainsKey(this.Name))
+        }
+
+        public static ValidationResult<string> ValidateSub(string name, Guid currentId = default)
+        {
+            var output = new ValidationResult<string>()
             {
-                validationResult.IsSuccess = false;
-                validationResult.Errors.Add($"Ya existe una asignatura que se llama {this.Name}");
-            }           
+                IsSuccess = true
+            };
+
+            if (string.IsNullOrEmpty(name))
+            {
+                output.IsSuccess = false;
+                output.Errors.Add("No ha introducido el nombre de la asignatura");
+            }
+
+            if (SubjectRepository.SubjectsByName.ContainsKey(name))
+            {
+                output.IsSuccess = false;
+                output.Errors.Add($"Ya existe una asignatura con este nombre {name}");
+            }
+
+            #region check duplication
+            var repo = new SubjectRepository();
+            var entityWithName = repo.GetSubjectsByName(name);
+
+            if (currentId == default && entityWithName != null)
+            {
+                // on create
+                output.IsSuccess = false;
+                output.Errors.Add($"Ya existe una asignatura con ese nombre {name}");
+            }
+            else if (currentId != default && entityWithName.Id != currentId)
+            {
+                // on update
+                output.IsSuccess = false;
+                output.Errors.Add($"Ya existe una asignatura con ese nombre {name}");
+            }
+            #endregion
+
+            if (output.IsSuccess)
+            {
+                output.ValidatedResult = name;
+            }
+
+            return output;
+        }
+
+        public static ValidationResult<string> ValidateTeacher(string name)
+        {
+            var output = new ValidationResult<string>()
+            {
+                IsSuccess = true
+            };
+
+            if (string.IsNullOrEmpty(name))
+            {
+                output.IsSuccess = false;
+                output.Errors.Add("No ha introducido el nombre del profesor");
+            }
+
+            if (output.IsSuccess)
+            {
+                output.ValidatedResult = name;
+            }
+
+            return output;
         }
 
         public override ValidationResult Validate()
@@ -33,14 +108,15 @@ namespace Academy.Lib.Models
                 IsSuccess = true
             };
 
-            ValidateName(validationResult);
+            ValidateSub(validationResult);
+            ValidateTeacher(validationResult);
 
             return validationResult;
         }
 
-        public SaveResult<Subject> SaveStudent()
+        public SaveResult<Subject> SaveSubject()
         {
-            var saveResult = base.Save();
+            var saveResult = base.Save<Subject>();
             return saveResult.Cast<Subject>();
         }
     }

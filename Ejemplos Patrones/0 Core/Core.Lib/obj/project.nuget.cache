@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "3h3ZnYSJgbGWEB8bZaK5NVfttxZxMYHL9FNONu8Ns6wQJ6PV7N94jVDvJ0uw5HGKioNSR4qM/CX195RjeW2LSA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dmany\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\dmany\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

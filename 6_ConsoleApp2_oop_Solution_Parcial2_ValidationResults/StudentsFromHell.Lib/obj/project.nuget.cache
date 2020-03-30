@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "sV2ESQIn8j5cSUx9EP82VpWCBE9bla4JBPzYsDGLoElfBJ2nFQ2sptG/Kb7xWCvDyqF+torUWnj7d5TpPI+KxQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\6_ConsoleApp2_oop_Solution_Parcial2_ValidationResults\\StudentsFromHell.Lib\\Academy.Lib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dmany\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\dmany\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

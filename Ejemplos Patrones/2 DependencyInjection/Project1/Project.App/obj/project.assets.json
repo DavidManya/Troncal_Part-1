@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\formacio\\.nuget\\packages\\": {}
+    "C:\\Users\\dmany\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\2 DependencyInjection\\Project1\\Project.App\\Project.App.csproj",
+      "projectUniqueName": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\2 DependencyInjection\\Project1\\Project.App\\Project.App.csproj",
       "projectName": "Project.App",
-      "projectPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\2 DependencyInjection\\Project1\\Project.App\\Project.App.csproj",
-      "packagesPath": "C:\\Users\\formacio\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\2 DependencyInjection\\Project1\\Project.App\\obj\\",
+      "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\2 DependencyInjection\\Project1\\Project.App\\Project.App.csproj",
+      "packagesPath": "C:\\Users\\dmany\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\2 DependencyInjection\\Project1\\Project.App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\formacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dmany\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -52,8 +52,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\2 DependencyInjection\\Project1\\Project1.Lib\\_Project1.Lib.csproj": {
-              "projectPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\2 DependencyInjection\\Project1\\Project1.Lib\\_Project1.Lib.csproj"
+            "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\2 DependencyInjection\\Project1\\Project1.Lib\\_Project1.Lib.csproj": {
+              "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\2 DependencyInjection\\Project1\\Project1.Lib\\_Project1.Lib.csproj"
             }
           }
         }
@@ -76,12 +76,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.1, 3.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.0.3, 3.0.3]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

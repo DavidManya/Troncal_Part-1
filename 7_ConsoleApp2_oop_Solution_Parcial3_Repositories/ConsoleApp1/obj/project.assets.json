@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dmany\\Desktop\\TrainingExample1_AverageMarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\ConsoleApp1\\Academy.App.csproj",
+      "projectUniqueName": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\ConsoleApp1\\Academy.App.csproj",
       "projectName": "Academy.App",
-      "projectPath": "C:\\Users\\dmany\\Desktop\\TrainingExample1_AverageMarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\ConsoleApp1\\Academy.App.csproj",
+      "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\ConsoleApp1\\Academy.App.csproj",
       "packagesPath": "C:\\Users\\dmany\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dmany\\Desktop\\TrainingExample1_AverageMarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\ConsoleApp1\\obj\\",
+      "outputPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dmany\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,8 +52,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\dmany\\Desktop\\TrainingExample1_AverageMarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj": {
-              "projectPath": "C:\\Users\\dmany\\Desktop\\TrainingExample1_AverageMarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj"
+            "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj": {
+              "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj"
             }
           }
         }
@@ -83,7 +83,7 @@
           },
           {
             "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.0.2, 3.0.2]"
+            "version": "[3.0.3, 3.0.3]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
@@ -99,7 +99,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

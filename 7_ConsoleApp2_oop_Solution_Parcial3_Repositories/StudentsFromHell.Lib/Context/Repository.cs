@@ -23,6 +23,7 @@ namespace Academy.Lib.Context
         public virtual SaveResult<T> Add(T entity)
         {
             var output = new SaveResult<T>();
+            output.IsSuccess = true;
 
             if (entity.Id == default(Guid))
                 entity.Id = Guid.NewGuid();
@@ -30,7 +31,7 @@ namespace Academy.Lib.Context
             if (DbSet.ContainsKey(entity.Id))
             {
                 output.IsSuccess = false;
-                output.Validation.Errors.Add("Ya existe una entity con ese id");
+                output.Validation.Errors.Add("Ya existe una entity con ese Id");
             }
 
             if (output.IsSuccess)
@@ -54,7 +55,7 @@ namespace Academy.Lib.Context
             if (entity.Id != default(Guid) && !DbSet.ContainsKey(entity.Id))
             {
                 output.IsSuccess = false;
-                output.Validation.Errors.Add("No existe una entity con ese id");
+                output.Validation.Errors.Add("No existe una entity con ese Id");
             }
 
             if (output.IsSuccess)

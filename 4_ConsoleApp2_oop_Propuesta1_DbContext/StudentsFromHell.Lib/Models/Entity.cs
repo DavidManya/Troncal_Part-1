@@ -1,11 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using Academy.Lib.Context;
+using Academy.Lib.Infrastructure;
 
 namespace Academy.Lib.Models
 {
-    public class Entity
+    public abstract class Entity
     {
         public string Id { get; set; }
+
+        public ValidationResult CurrentValidation { get; private set; }
+
     }
 }

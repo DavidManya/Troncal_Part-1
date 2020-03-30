@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Academy.Lib.Models
 {
-    public class Exam
+    public class Exam : Entity
     {
         //public int ExamID { get; set; } key del Dictionary
         public int SubjectID { get; set; }

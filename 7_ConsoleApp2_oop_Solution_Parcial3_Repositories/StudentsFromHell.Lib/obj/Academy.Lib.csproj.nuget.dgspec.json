@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dmany\\Desktop\\TrainingExample1_AverageMarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj": {}
+    "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dmany\\Desktop\\TrainingExample1_AverageMarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj": {
+    "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dmany\\Desktop\\TrainingExample1_AverageMarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj",
+        "projectUniqueName": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj",
         "projectName": "Academy.Lib",
-        "projectPath": "C:\\Users\\dmany\\Desktop\\TrainingExample1_AverageMarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj",
+        "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj",
         "packagesPath": "C:\\Users\\dmany\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dmany\\Desktop\\TrainingExample1_AverageMarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\obj\\",
+        "outputPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dmany\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,7 +55,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

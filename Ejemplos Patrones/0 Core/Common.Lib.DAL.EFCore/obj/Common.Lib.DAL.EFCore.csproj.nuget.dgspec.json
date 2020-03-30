@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\Common.Lib.DAL.EFCore.csproj": {}
+    "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\Common.Lib.DAL.EFCore.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\Common.Lib.DAL.EFCore.csproj": {
+    "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\Common.Lib.DAL.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\Common.Lib.DAL.EFCore.csproj",
+        "projectUniqueName": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\Common.Lib.DAL.EFCore.csproj",
         "projectName": "Common.Lib.DAL.EFCore",
-        "projectPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\Common.Lib.DAL.EFCore.csproj",
-        "packagesPath": "C:\\Users\\josef\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\obj\\",
+        "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\Common.Lib.DAL.EFCore.csproj",
+        "packagesPath": "C:\\Users\\dmany\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\josef\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\dmany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -32,8 +27,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj": {
-                "projectPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj"
+              "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj": {
+                "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj"
               }
             }
           }
@@ -68,27 +63,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj": {
+    "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj",
+        "projectUniqueName": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj",
         "projectName": "Common.Lib",
-        "projectPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj",
-        "packagesPath": "C:\\Users\\josef\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\obj\\",
+        "projectPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj",
+        "packagesPath": "C:\\Users\\dmany\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\0 Core\\Core.Lib\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\josef\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\dmany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -128,7 +118,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

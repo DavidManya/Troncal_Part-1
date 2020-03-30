@@ -8,8 +8,60 @@ namespace Academy.Lib.Models
 {
     public class Student : Entity
     {
+        public string Dni { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+
+        //public Guid Guid { get; private set; }
+
+        #region Domain Validations
+
+        public void ValidateExist(ValidationResult validationResult)
+        {
+            var vr = ValidateExist(this.Dni);
+
+            if (!vr.IsSuccess)
+            {
+                validationResult.IsSuccess = false;
+                validationResult.Errors.AddRange(vr.Errors);
+            }
+        }
+
+        public void ValidateDni(ValidationResult validationResult)
+        {
+            var vr = ValidateDni(this.Dni, this.Id);
+
+            if (!vr.IsSuccess)
+            {
+                validationResult.IsSuccess = false;
+                validationResult.Errors.AddRange(vr.Errors);
+            }
+        }
+
+        public void ValidateFName(ValidationResult validationResult)
+        {
+            var vr = ValidateFName(this.FirstName);
+            if (!vr.IsSuccess)
+            {
+                validationResult.IsSuccess = false;
+                validationResult.Errors.AddRange(vr.Errors);
+            }
+        }
+
+        public void ValidateLName(ValidationResult validationResult)
+        {
+            var vr = ValidateFName(this.LastName);
+            if (!vr.IsSuccess)
+            {
+                validationResult.IsSuccess = false;
+                validationResult.Errors.AddRange(vr.Errors);
+            }
+        }
+
+        #endregion
+
         #region Static Validations
-               
+
         public static ValidationResult<string> ValidateDni(string dni, Guid currentId = default)
         {
             var output = new ValidationResult<string>()
@@ -20,7 +72,13 @@ namespace Academy.Lib.Models
             if (string.IsNullOrEmpty(dni))
             {
                 output.IsSuccess = false;
-                output.Errors.Add("el dni delalumno no puede estar vacío");
+                output.Errors.Add("El DNI del alumno no puede estar vacío");
+            }
+            
+            if (dni.Length < 9)
+            {
+                output.IsSuccess = false;
+                output.Errors.Add("El DNI del alumno no tiene un formato correcto");
             }
 
             #region check duplication
@@ -31,13 +89,13 @@ namespace Academy.Lib.Models
             {
                 // on create
                 output.IsSuccess = false;
-                output.Errors.Add("ya existe un alumno con ese dni");
+                output.Errors.Add($"Ya existe un alumno con ese DNI {dni}");
             }
             else if (currentId != default && entityWithDni.Id != currentId)
             {
                 // on update
                 output.IsSuccess = false;
-                output.Errors.Add("ya existe un alumno con ese dni");
+                output.Errors.Add($"Ya existe un alumno con ese DNI {dni}");
             }
             #endregion
 
@@ -49,142 +107,102 @@ namespace Academy.Lib.Models
             return output;
         }
 
-        public static ValidationResult<int> ValidateChairNumber(string chairNumberText)
-        {
-            var output = new ValidationResult<int>()
-            {
-                IsSuccess = true
-            };
-
-            var chairNumber = 0;
-            var isConversionOk = false;
-
-            #region check null or empty
-            if (string.IsNullOrEmpty(chairNumberText))
-            {
-                output.IsSuccess = false;
-                output.Errors.Add("el número de la silla no puede estar vacío o nulo");
-            }
-            #endregion
-
-            #region check format conversion
-
-            isConversionOk = int.TryParse(chairNumberText, out chairNumber);
-
-            if (!isConversionOk)
-            {
-                output.IsSuccess = false;
-                output.Errors.Add($"no se puede convertir {chairNumber} en número");
-            }
-
-            #endregion
-
-            #region check if the char is already in use
-
-            if (isConversionOk)
-            {
-                var repoStudents = new Repository<Student>();
-                var currentStudentInChair = repoStudents.QueryAll().FirstOrDefault(s => s.ChairNumber == chairNumber);
-
-                if (currentStudentInChair != null)
-                {
-                    output.IsSuccess = false;
-                    output.Errors.Add($"ya hay un alumno {currentStudentInChair.Name} en la silla {chairNumber}");
-                }
-            }
-            #endregion
-
-            if (output.IsSuccess)
-                output.ValidatedResult = chairNumber;
-
-            return output;
-        }
-
-        public static ValidationResult<string> ValidateName(string name)
+        public static ValidationResult<string> ValidateExist(string dni)
         {
             var output = new ValidationResult<string>()
             {
                 IsSuccess = true
             };
 
-            if (string.IsNullOrEmpty(name))
+            if (string.IsNullOrEmpty(dni))
             {
                 output.IsSuccess = false;
-                output.Errors.Add("el nombre delalumno no puede estar vacío");
+                output.Errors.Add("El DNI del alumno no puede estar vacío");
+            }
+
+            if (dni.Length < 9)
+            {
+                output.IsSuccess = false;
+                output.Errors.Add("El DNI del alumno no tiene un formato correcto");
+            }
+
+            #region check existence
+            var repo = new StudentRepository();
+            var entityWithDni = repo.GetStudentByDni(dni);
+
+            if (entityWithDni == null)
+            {
+                output.IsSuccess = false;
+                output.Errors.Add($"No existe un alumno con ese DNI {dni}");
+            }
+            #endregion
+
+            if (output.IsSuccess)
+            {
+                output.ValidatedResult = dni;
             }
 
             return output;
         }
 
-        #endregion
-
-        public string Dni { get; set; }
-        public string Name { get; set; }
-
-        public int ChairNumber { get; set; }
-
-        public List<Exam> Exams
+        public static ValidationResult<string> ValidateFName(string fname)
         {
-            get
+            var output = new ValidationResult<string>()
             {
-                return DbContext.Exams.Values.Where(e => e.student.Id == this.Id).ToList();
+                IsSuccess = true
+            };
+
+            if (string.IsNullOrEmpty(fname))
+            {
+                output.IsSuccess = false;
+                output.Errors.Add("No ha introducido el nombre");
             }
+
+            if (output.IsSuccess)
+            {
+                output.ValidatedResult = fname;
+            }
+
+            return output;
         }
 
-        public Guid Guid { get; private set; }
-
-        #region Domain Validations
-
-        public void ValidateName(ValidationResult validationResult)
+        public static ValidationResult<string> ValidateLName(string lname)
         {
-            var validateNameResult = ValidateName(this.Name);
-            if (!validateNameResult.IsSuccess)
+            var output = new ValidationResult<string>()
             {
-                validationResult.IsSuccess = false;
-                validationResult.Errors.AddRange(validateNameResult.Errors);
-            }
-        }
+                IsSuccess = true
+            };
 
-        public void ValidateDni(ValidationResult validationResult)
-        {            
-            var vr = ValidateDni(this.Dni, this.Id);
-
-            if (!vr.IsSuccess)
+            if (string.IsNullOrEmpty(lname))
             {
-                validationResult.IsSuccess = false;
-                validationResult.Errors.AddRange(vr.Errors);
+                output.IsSuccess = false;
+                output.Errors.Add("No ha introducido los apellidos");
             }
-        }
 
-        public void ValidateChairNumber(ValidationResult validationResult)
-        {
-            var vr = ValidateChairNumber(this.ChairNumber.ToString());
-
-            if (!vr.IsSuccess)
+            if (output.IsSuccess)
             {
-                validationResult.IsSuccess = false;
-                validationResult.Errors.AddRange(vr.Errors);
+                output.ValidatedResult = lname;
             }
+            return output;
         }
 
         #endregion
-
-        public SaveResult<Student> Save()
-        {            
-            var saveResult = base.Save<Student>();
-            return saveResult;
-        }
 
         public override ValidationResult Validate()
         {
             var output = base.Validate();
 
-            // cambiar ValidateName para que sea igual que ValidateDni
-            ValidateName(output);
             ValidateDni(output);
-            ValidateChairNumber(output);
+            ValidateFName(output);
+            ValidateLName(output);
 
             return output;
+        }
+
+        public SaveResult<Student> Save()
+        {
+            var saveResult = base.Save<Student>();
+            return saveResult;
         }
     }
 }
