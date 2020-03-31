@@ -14,7 +14,7 @@ namespace Academy.Lib.Context
 
             if (output.IsSuccess)
             {
-                SubjectsByName.Add(output.Entity.Name, output.Entity);
+                SubjectsByName.Add(entity.Name, entity);
             }
 
             return output;
@@ -26,7 +26,7 @@ namespace Academy.Lib.Context
 
             if (output.IsSuccess)
             {
-                SubjectsByName[output.Entity.Name] = output.Entity;
+                SubjectsByName[entity.Name] = entity;
             }
 
             return output;

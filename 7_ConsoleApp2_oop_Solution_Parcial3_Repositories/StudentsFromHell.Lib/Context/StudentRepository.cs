@@ -6,7 +6,7 @@ namespace Academy.Lib.Context
 {
     public class StudentRepository : Repository<Student>
     {
-        private static Dictionary<string, Student> StudentsByDni { get; set; } = new Dictionary<string, Student>();
+        public static Dictionary<string, Student> StudentsByDni { get; set; } = new Dictionary<string, Student>();
 
         public override SaveResult<Student> Add(Student entity)
         {
@@ -14,7 +14,7 @@ namespace Academy.Lib.Context
 
             if (output.IsSuccess)
             {
-                StudentsByDni.Add(output.Entity.Dni, output.Entity);
+                StudentsByDni.Add(entity.Dni, entity);
             }
 
             return output;
@@ -26,7 +26,19 @@ namespace Academy.Lib.Context
 
             if (output.IsSuccess)
             {
-                StudentsByDni[output.Entity.Dni] = output.Entity;
+                StudentsByDni[entity.Dni] = entity;
+            }
+
+            return output;
+        }
+
+        public override DeleteResult<Student> Delete(Student entity)
+        {
+            var output = base.Delete(entity);
+
+            if (output.IsSuccess)
+            {
+                StudentsByDni.Remove(entity.Dni);
             }
 
             return output;

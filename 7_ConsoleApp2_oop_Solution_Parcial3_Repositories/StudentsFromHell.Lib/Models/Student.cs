@@ -11,6 +11,7 @@ namespace Academy.Lib.Models
         public string Dni { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string Email { get; set; }
 
         //public Guid Guid { get; private set; }
 
@@ -58,6 +59,16 @@ namespace Academy.Lib.Models
             }
         }
 
+        public void ValidateEmail(ValidationResult validationResult)
+        {
+            var vr = ValidateEmail(this.Email);
+            if (!vr.IsSuccess)
+            {
+                validationResult.IsSuccess = false;
+                validationResult.Errors.AddRange(vr.Errors);
+            }
+        }
+
         #endregion
 
         #region Static Validations
@@ -92,6 +103,7 @@ namespace Academy.Lib.Models
                 output.Errors.Add($"Ya existe un alumno con ese DNI {dni}");
             }
             else if (currentId != default && entityWithDni.Id != currentId)
+            //else if (currentId != default && (entityWithDni != null && entityWithDni.Id != currentId))
             {
                 // on update
                 output.IsSuccess = false;
@@ -186,6 +198,38 @@ namespace Academy.Lib.Models
             return output;
         }
 
+        public static ValidationResult<string> ValidateEmail(string email)
+        {
+            var output = new ValidationResult<string>()
+            {
+                IsSuccess = true
+            };
+
+            if (string.IsNullOrEmpty(email))
+            {
+                output.IsSuccess = false;
+                output.Errors.Add("No ha introducido el correo electrónico");
+            }
+
+            string[] words = email.Split('@');
+            if (!words[1].Contains('.') || !email.Contains('@'))
+            {
+                output.IsSuccess = false;
+                output.Errors.Add("No ha introducido el correo correctamente");
+            }
+
+            if (words.Length == 1)
+            {
+                output.IsSuccess = false;
+                output.Errors.Add("No ha introducido el correo correctamente");
+            }
+
+            if (output.IsSuccess)
+            {
+                output.ValidatedResult = email;
+            }
+            return output;
+        }
         #endregion
 
         public override ValidationResult Validate()
@@ -195,6 +239,16 @@ namespace Academy.Lib.Models
             ValidateDni(output);
             ValidateFName(output);
             ValidateLName(output);
+            ValidateEmail(output);
+
+            return output;
+        }
+
+        public override ValidationResult ValidateDel()
+        {
+            var output = base.ValidateDel();
+
+            ValidateExist(output);
 
             return output;
         }
@@ -203,6 +257,21 @@ namespace Academy.Lib.Models
         {
             var saveResult = base.Save<Student>();
             return saveResult;
+        }
+
+        public DeleteResult<Student> Delete()
+        {
+            var deleteResult = base.Delete<Student>();
+            return deleteResult;
+        }
+        public override Repository<T> GetRepo<T>()
+        {
+            var output = new StudentRepository();
+            return output as Repository<T>;
+        }
+        public StudentRepository GetStudentRepo()
+        {
+            return GetRepo<Student>() as StudentRepository;
         }
     }
 }

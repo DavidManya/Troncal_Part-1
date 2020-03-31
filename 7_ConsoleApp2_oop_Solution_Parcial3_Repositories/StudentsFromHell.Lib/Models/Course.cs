@@ -76,10 +76,33 @@ namespace Academy.Lib.Models
 
             return output;
         }
+
+        public override ValidationResult Validate()
+        {
+            var validationResult = new ValidationResult
+            {
+                IsSuccess = true
+            };
+
+            ValidateChairNumber(validationResult);
+
+            return validationResult;
+        }
+
         public SaveResult<Course> Save()
         {
             var saveResult = base.Save<Course>();
             return saveResult;
+        }
+
+        public override Repository<T> GetRepo<T>()
+        {
+            var output = new CourseRepository();
+            return output as Repository<T>;
+        }
+        public CourseRepository GetCourseRepo()
+        {
+            return GetRepo<Course>() as CourseRepository;
         }
     }
 }

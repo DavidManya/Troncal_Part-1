@@ -113,5 +113,24 @@ namespace Academy.Lib.Models
             var saveResult = base.Save<Exam>();
             return saveResult;
         }
+
+        public override ValidationResult Validate()
+        {
+            var output = base.Validate();
+            ValidateDate(output);
+            ValidateMark(output);
+
+            return output;
+        }
+
+        public override Repository<T> GetRepo<T>()
+        {
+            var output = new ExamRepository();
+            return output as Repository<T>;
+        }
+        public ExamRepository GetExamRepo()
+        {
+            return GetRepo<Exam>() as ExamRepository;
+        }
     }
 }

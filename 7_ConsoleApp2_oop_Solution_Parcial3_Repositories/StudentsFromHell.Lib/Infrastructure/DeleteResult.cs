@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Academy.Lib.Infrastructure
 {
-    public class SaveResult<T> where T : Entity
+    public class DeleteResult<T> where T : Entity
     {
         public ValidationResult Validation { get; set; } = new ValidationResult();
 
@@ -23,9 +23,9 @@ namespace Academy.Lib.Infrastructure
 
         public T Entity { get; set; }
 
-        public SaveResult<TOut> Cast<TOut>() where TOut : Entity
+        public DeleteResult<TOut> Cast<TOut>() where TOut : Entity
         {
-            var output = new SaveResult<TOut>
+            var output = new DeleteResult<TOut>
             {
                 Entity = this.Entity as TOut,
                 Validation = this.Validation

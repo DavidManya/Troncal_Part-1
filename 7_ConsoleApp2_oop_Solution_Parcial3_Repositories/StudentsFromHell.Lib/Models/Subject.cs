@@ -80,6 +80,32 @@ namespace Academy.Lib.Models
             return output;
         }
 
+        public static ValidationResult<string> ValidateExistSub(string name, Guid currentId = default)
+        {
+            var output = new ValidationResult<string>()
+            {
+                IsSuccess = true
+            };
+
+            if (string.IsNullOrEmpty(name))
+            {
+                output.IsSuccess = false;
+                output.Errors.Add("No ha introducido el nombre de la asignatura");
+            }
+
+            if (!SubjectRepository.SubjectsByName.ContainsKey(name))
+            {
+                output.IsSuccess = false;
+                output.Errors.Add($"No existe una asignatura con este nombre {name}");
+            }
+
+            if (output.IsSuccess)
+            {
+                output.ValidatedResult = name;
+            }
+
+            return output;
+        }
         public static ValidationResult<string> ValidateTeacher(string name)
         {
             var output = new ValidationResult<string>()
@@ -114,10 +140,21 @@ namespace Academy.Lib.Models
             return validationResult;
         }
 
-        public SaveResult<Subject> SaveSubject()
+        public SaveResult<Subject> Save()
         {
             var saveResult = base.Save<Subject>();
             return saveResult.Cast<Subject>();
         }
+
+        public override Repository<T> GetRepo<T>()
+        {
+            var output = new SubjectRepository();
+            return output as Repository<T>;
+        }
+        public SubjectRepository GetSubjectRepo()
+        {
+            return GetRepo<Subject>() as SubjectRepository;
+        }
+
     }
 }

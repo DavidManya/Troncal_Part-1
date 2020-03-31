@@ -45,6 +45,7 @@ namespace Academy.Lib.Context
         public virtual SaveResult<T> Update(T entity)
         {
             var output = new SaveResult<T>();
+            output.IsSuccess = true;
 
             if (entity.Id == default(Guid))
             {
@@ -61,6 +62,25 @@ namespace Academy.Lib.Context
             if (output.IsSuccess)
             {
                 DbSet[entity.Id] = entity;
+            }
+
+            return output;
+        }
+
+        public virtual DeleteResult<T> Delete(T entity)
+        {
+            var output = new DeleteResult<T>();
+            output.IsSuccess = true;
+
+            if (!DbSet.ContainsKey(entity.Id))
+            {
+                output.IsSuccess = false;
+                output.Validation.Errors.Add("No existe una entity con ese Id");
+            }
+
+            if (output.IsSuccess)
+            {
+                DbSet.Remove(entity.Id);
             }
 
             return output;

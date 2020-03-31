@@ -18,7 +18,8 @@ namespace Academy.Lib.Models
 
             if (CurrentValidation.IsSuccess)
             {
-                var repo = new Repository<T>();
+                //var repo = new Repository<T>();
+                var repo = GetRepo<T>();
 
                 if (this.Id == Guid.Empty)
                 {
@@ -36,6 +37,23 @@ namespace Academy.Lib.Models
             return output;
         }
 
+        public virtual DeleteResult<T> Delete<T>() where T : Entity
+        {
+            var output = new DeleteResult<T>();
+
+            CurrentValidation = ValidateDel();
+
+            if (CurrentValidation.IsSuccess)
+            {
+                var repo = GetRepo<T>();
+                output = repo.Delete(this as T);
+            }
+
+            output.Validation = CurrentValidation;
+
+            return output;
+        }
+
         public virtual ValidationResult Validate()
         {
             var output = new ValidationResult()
@@ -43,6 +61,22 @@ namespace Academy.Lib.Models
                 IsSuccess = true
             };
 
+            return output;
+        }
+
+        public virtual ValidationResult ValidateDel()
+        {
+            var output = new ValidationResult()
+            {
+                IsSuccess = true
+            };
+
+            return output;
+        }
+
+        public virtual Repository<T> GetRepo<T>() where T : Entity
+        {
+            var output = new Repository<T>();
             return output;
         }
     }
