@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RXYPTv5EHWXEMu2ULKZVqmH0KRVFNS44dUw8JaHmcR5qmLFqylQljSpgg27OcvOssDRta8wrvQLjoshVgtSTNg==",
+  "dgSpecHash": "LDfBii6S13Tzb1r7kmpEzzqoKai1nsu0+dEkDOctMHUzxycvRRFYq+vieerJtGKSoVJbCLmJJqlQNPykSYpOHg==",
   "success": true,
   "projectFilePath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project.Lib.DA.EFCore\\Project.Lib.DAL.EFCore.csproj",
   "expectedPackageFiles": [

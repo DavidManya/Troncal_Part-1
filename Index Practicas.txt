@@ -1,0 +1,29 @@
+1) Propuesta de aplicación con ejemplos para llegar al paso 2
+
+2) ConsoleApp1_solution 1: El objetivo construir un flujo de programa
+ a) ofrecer opciones de menu con el while
+ b) añadir datos a una lista
+ c) realizar cálculos con fuciones y ensañarlas
+
+3) ConsoleApp1_solution2: Es modificar el programa par permitir información compleja
+ a) crear clases para los modelos (Student, Subject, Exam)
+ b) transformar el list de double a Dictionaries de Student, Subject y Exam
+ c) modificar el menú para contemplar datos múltiples (name, dni etc..)
+
+
+4) DbContext: Comenzar a separ el programa de la persistencia creando una clases estática que tenga
+los dictionaries y de los métodos para manjearlos (CRUD)
+ 
+5) (es la solución a la anterior) 
+
+6) Validation Results: 
+ a) llevar el código cómún de los models a la clase Entity (Save, y Delete)
+ d) crear clase ValidationResult para los validaciones de negocio
+ e) crear clase SaveResult y Delete Result
+
+7) El objetivo es reemplazr el DbContext por el patrón Repository: el resto de la aplicación no se tiene que 
+enterar excepto en la Entity (Save y Delete) y cuando busquemos los datos
+
+8) Fabricar la aplicación de Academy con WPF y patrón MVVM para la UI y sepración de capas DDD explicadas en los ejemplos y patrones:
+  a) opcional es adaptar el programa de console primero para que funcione con capas
+

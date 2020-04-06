@@ -36,7 +36,7 @@ namespace WpfApp1
 
             loginVM.Login();
 
-            if(loginVM.LoginResult == "El login está bien, bienvenid@!")
+            if (loginVM.LoginResult == "El login está bien, bienvenid@!") ;
 
         }
     }

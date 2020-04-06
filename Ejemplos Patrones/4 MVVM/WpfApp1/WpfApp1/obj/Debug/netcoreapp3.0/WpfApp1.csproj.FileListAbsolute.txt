@@ -22,3 +22,13 @@ C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\4 MVVM\WpfApp1\W
 C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\4 MVVM\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.0\Views\SubjectsView.g.cs
 C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\4 MVVM\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.0\Views\StudentsView.baml
 C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\4 MVVM\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.0\Views\SubjectsView.baml
+C:\Users\dmany\Desktop\Troncal_Part 1\Ejemplos Patrones\4 MVVM\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.0\WpfApp1.csprojAssemblyReference.cache
+C:\Users\dmany\Desktop\Troncal_Part 1\Ejemplos Patrones\4 MVVM\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.0\MainWindow.g.cs
+C:\Users\dmany\Desktop\Troncal_Part 1\Ejemplos Patrones\4 MVVM\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.0\Views\LoginView.g.cs
+C:\Users\dmany\Desktop\Troncal_Part 1\Ejemplos Patrones\4 MVVM\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.0\Views\StudentsView.g.cs
+C:\Users\dmany\Desktop\Troncal_Part 1\Ejemplos Patrones\4 MVVM\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.0\Views\SubjectsView.g.cs
+C:\Users\dmany\Desktop\Troncal_Part 1\Ejemplos Patrones\4 MVVM\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.0\App.g.cs
+C:\Users\dmany\Desktop\Troncal_Part 1\Ejemplos Patrones\4 MVVM\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.0\GeneratedInternalTypeHelper.g.cs
+C:\Users\dmany\Desktop\Troncal_Part 1\Ejemplos Patrones\4 MVVM\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.0\WpfApp1_MarkupCompile.cache
+C:\Users\dmany\Desktop\Troncal_Part 1\Ejemplos Patrones\4 MVVM\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.0\WpfApp1_MarkupCompile.lref
+C:\Users\dmany\Desktop\Troncal_Part 1\Ejemplos Patrones\4 MVVM\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.0\WpfApp1.pdb
