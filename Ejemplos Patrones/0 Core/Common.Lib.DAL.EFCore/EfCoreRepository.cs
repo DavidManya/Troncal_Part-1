@@ -40,8 +40,8 @@ namespace Common.Lib.DAL.EFCore
 
         public virtual SaveResult<T> Add(T entity)
         {
-            // creo una conexión contra la DB guardo la entity y le devuelvo 
-            // a quien me haya hecho la llamada
+            // se crea conexión contra la DB, se guarda la entity y se devuelve 
+            // a quien haya hecho la llamada
             var output = new SaveResult<T>
             {
                 IsSuccess = true
@@ -78,8 +78,8 @@ namespace Common.Lib.DAL.EFCore
                 output.Validation.Errors.Add("No se puede actualizar una entidad sin Id");
             }
 
-            //if (entity.Id != default(Guid) && !DbSet.Any(x => x.Id == entity.Id))
-            if (entity.Id != default(Guid) && DbSet.All(x => x.Id != entity.Id)) // esta es mejor porque tiene mejor performance
+            //if (entity.Id != default(Guid) && !DbSet.Any(x => x.Id == entity.Id)) // es equivalente
+            if (entity.Id != default(Guid) && DbSet.All(x => x.Id != entity.Id)) 
             {
                 output.IsSuccess = false;
                 output.Validation.Errors.Add("No existe una entity con ese id");

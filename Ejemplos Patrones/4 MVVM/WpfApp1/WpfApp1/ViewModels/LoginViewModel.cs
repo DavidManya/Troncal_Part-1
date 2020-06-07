@@ -53,7 +53,6 @@ namespace WpfApp1.Views
         public LoginViewModel()
         {
             Email = "pepe@pepe.com";
-
             LoginCommand = new RouteCommand(Login);
         }
 

@@ -17,7 +17,7 @@ namespace Academy.Lib.Models
 
         public void ValidateChairNumber(ValidationResult validationResult)
         {
-            var vr = ValidateChairNumber(this.ChairNumber.ToString());
+            var vr = ValidateChairNumber(this.ChairNumber.ToString(), this.NameSubject);
 
             if (!vr.IsSuccess)
             {
@@ -26,7 +26,7 @@ namespace Academy.Lib.Models
             }
         }
 
-        public static ValidationResult<int> ValidateChairNumber(string chairNumberText)
+        public static ValidationResult<int> ValidateChairNumber(string chairNumberText, string namesubject)
         {
             var output = new ValidationResult<int>()
             {
@@ -61,7 +61,7 @@ namespace Academy.Lib.Models
             if (isConversionOk)
             {
                 var repoCourse = new Repository<Course>();
-                var currentStudentInChair = repoCourse.QueryAll().FirstOrDefault(s => s.ChairNumber == chairNumber);
+                var currentStudentInChair = repoCourse.QueryAll().FirstOrDefault(s => s.ChairNumber == chairNumber && s.NameSubject == namesubject);
 
                 if (currentStudentInChair != null)
                 {

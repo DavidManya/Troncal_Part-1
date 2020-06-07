@@ -494,7 +494,7 @@ namespace ConsoleApp1
                             var chair = Console.ReadLine();
 
                             ValidationResult<int> vrChNum;
-                            while (!(vrChNum = Course.ValidateChairNumber(chair)).IsSuccess)
+                            while (!(vrChNum = Course.ValidateChairNumber(chair, name)).IsSuccess)
                             {
                                 Console.WriteLine(vrChNum.AllErrors);
                                 chair = Console.ReadLine();
@@ -1122,7 +1122,7 @@ namespace ConsoleApp1
             }
 
             Console.WriteLine();
-            ShowStatisticsMenu();
+            //ShowStatisticsMenu();
         }
 
         static void ShowMinimum()
@@ -1230,7 +1230,7 @@ namespace ConsoleApp1
             }
 
             Console.WriteLine();
-            ShowStatisticsMenu();
+            //ShowStatisticsMenu();
         }
 
         static void ShowMaximum()
@@ -1337,7 +1337,7 @@ namespace ConsoleApp1
             }
 
             Console.WriteLine();
-            ShowStatisticsMenu();
+            //ShowStatisticsMenu();
         }     
 
         public static void ClearCurrentConsoleLine()

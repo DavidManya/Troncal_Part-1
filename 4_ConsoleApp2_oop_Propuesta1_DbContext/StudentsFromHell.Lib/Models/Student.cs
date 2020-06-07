@@ -23,13 +23,13 @@ namespace Academy.Lib.Models
             if (string.IsNullOrEmpty(dni))
             {
                 output.IsSuccess = false;
-                output.Messages.Add("El DNI no está informado");
+                output.Errors.Add("El DNI no está informado");
             }
 
             if (dni.Length != 9)
             {
                 output.IsSuccess = false;
-                output.Messages.Add("El DNI está en un formato incorrecto, vuelva a escribirlo");
+                output.Errors.Add("El DNI está en un formato incorrecto, vuelva a escribirlo");
             }
 
             return output;
@@ -48,7 +48,7 @@ namespace Academy.Lib.Models
             if (string.IsNullOrEmpty(name))
             {
                 output.IsSuccess = false;
-                output.Messages.Add("El nombre no está completo. Vuelva a escribirlo");
+                output.Errors.Add("El nombre no está completo. Vuelva a escribirlo");
             }
             #endregion
 

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Academy.Lib.Context;
 using Academy.Lib.Infrastructure;
 
@@ -22,7 +23,7 @@ namespace Academy.Lib.Models
             if (string.IsNullOrEmpty(name))
             {
                 output.IsSuccess = false;
-                output.Messages.Add("El nombre no está completo. Vuelva a escribirlo");
+                output.Errors.Add("El nombre no está completo. Vuelva a escribirlo");
             }
             #endregion
 

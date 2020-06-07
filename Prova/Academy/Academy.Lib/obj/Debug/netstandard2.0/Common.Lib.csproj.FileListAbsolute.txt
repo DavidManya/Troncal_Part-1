@@ -1,0 +1,4 @@
+C:\Users\dmany\Desktop\Troncal_Part 1\Prova\Academy\Academy.Lib\obj\Debug\netstandard2.0\Common.Lib.csprojAssemblyReference.cache
+C:\Users\dmany\Desktop\Troncal_Part 1\Prova\Academy\Academy.Lib\obj\Debug\netstandard2.0\Common.Lib.csproj.CoreCompileInputs.cache
+C:\Users\dmany\Desktop\Troncal_Part 1\Prova\Academy\Academy.Lib\obj\Debug\netstandard2.0\Common.Lib.AssemblyInfoInputs.cache
+C:\Users\dmany\Desktop\Troncal_Part 1\Prova\Academy\Academy.Lib\obj\Debug\netstandard2.0\Common.Lib.AssemblyInfo.cs

@@ -403,8 +403,11 @@ namespace ConsoleApp1
                             }
                             else
                             {
+                                var clau = 0;
+                                clau = Convert.ToInt32(DbContext.students.Max(x => x.Value.Id)) + 1;
                                 var student = new Student
                                 {
+                                    Id = Convert.ToString(clau),
                                     Dni = words[0],
                                     FirstName = words[1],
                                     LastName = words[2]

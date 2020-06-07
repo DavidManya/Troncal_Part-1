@@ -1,0 +1,4 @@
+C:\Users\dmany\Desktop\Troncal_Part 1\MVVM\MVVMAcademy\Academy.lib\obj\Debug\netstandard2.0\MVVMAcademy.Lib.csprojAssemblyReference.cache
+C:\Users\dmany\Desktop\Troncal_Part 1\MVVM\MVVMAcademy\Academy.lib\obj\Debug\netstandard2.0\MVVMAcademy.Lib.csproj.CoreCompileInputs.cache
+C:\Users\dmany\Desktop\Troncal_Part 1\MVVM\MVVMAcademy\Academy.lib\obj\Debug\netstandard2.0\MVVMAcademy.Lib.AssemblyInfoInputs.cache
+C:\Users\dmany\Desktop\Troncal_Part 1\MVVM\MVVMAcademy\Academy.lib\obj\Debug\netstandard2.0\MVVMAcademy.Lib.AssemblyInfo.cs

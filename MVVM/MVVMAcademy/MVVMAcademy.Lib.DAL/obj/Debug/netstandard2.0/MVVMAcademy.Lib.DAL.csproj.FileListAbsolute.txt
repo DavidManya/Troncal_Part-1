@@ -1,0 +1,9 @@
+C:\Users\dmany\Desktop\Troncal_Part 1\MVVM\MVVMAcademy\MVVMAcademy.Lib.DAL\bin\Debug\netstandard2.0\MVVMAcademy.Lib.DAL.deps.json
+C:\Users\dmany\Desktop\Troncal_Part 1\MVVM\MVVMAcademy\MVVMAcademy.Lib.DAL\bin\Debug\netstandard2.0\MVVMAcademy.Lib.DAL.dll
+C:\Users\dmany\Desktop\Troncal_Part 1\MVVM\MVVMAcademy\MVVMAcademy.Lib.DAL\obj\Debug\netstandard2.0\MVVMAcademy.Lib.DAL.csprojAssemblyReference.cache
+C:\Users\dmany\Desktop\Troncal_Part 1\MVVM\MVVMAcademy\MVVMAcademy.Lib.DAL\obj\Debug\netstandard2.0\MVVMAcademy.Lib.DAL.AssemblyInfoInputs.cache
+C:\Users\dmany\Desktop\Troncal_Part 1\MVVM\MVVMAcademy\MVVMAcademy.Lib.DAL\obj\Debug\netstandard2.0\MVVMAcademy.Lib.DAL.AssemblyInfo.cs
+C:\Users\dmany\Desktop\Troncal_Part 1\MVVM\MVVMAcademy\MVVMAcademy.Lib.DAL\bin\Debug\netstandard2.0\MVVMAcademy.Lib.DAL.pdb
+C:\Users\dmany\Desktop\Troncal_Part 1\MVVM\MVVMAcademy\MVVMAcademy.Lib.DAL\obj\Debug\netstandard2.0\MVVMAcademy.Lib.DAL.csproj.CoreCompileInputs.cache
+C:\Users\dmany\Desktop\Troncal_Part 1\MVVM\MVVMAcademy\MVVMAcademy.Lib.DAL\obj\Debug\netstandard2.0\MVVMAcademy.Lib.DAL.dll
+C:\Users\dmany\Desktop\Troncal_Part 1\MVVM\MVVMAcademy\MVVMAcademy.Lib.DAL\obj\Debug\netstandard2.0\MVVMAcademy.Lib.DAL.pdb

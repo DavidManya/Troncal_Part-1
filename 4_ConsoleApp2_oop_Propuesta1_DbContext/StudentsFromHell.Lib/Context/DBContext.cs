@@ -25,12 +25,12 @@ namespace Academy.Lib.Context
         public static bool UpdateStudent(Student student)
         {
             if (student.Id != null & students.ContainsKey(student.Id))
-            {
+                {
                 var studentInMemory = students[student.Id];
 
                 if (student != studentInMemory)
                 {
-                    students[student.Id] = student;
+                    students[student.Dni] = student;
                 }
             }
             else
@@ -43,7 +43,7 @@ namespace Academy.Lib.Context
 
         public static bool DeleteStudent(Student student)
         {
-            students.Remove(student.Id);
+            students.Remove(student.Dni);
 
             return true;
         }
