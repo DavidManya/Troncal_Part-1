@@ -1,5 +1,4 @@
-﻿using Academy.Lib.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Academy.Lib.Infrastructure
 {

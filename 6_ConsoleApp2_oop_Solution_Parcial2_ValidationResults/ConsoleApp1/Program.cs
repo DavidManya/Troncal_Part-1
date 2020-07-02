@@ -1,7 +1,6 @@
 ﻿using Academy.Lib.Context;
 using Academy.Lib.Infrastructure;
 using Academy.Lib.Models;
-using Academy.Lib.Models.Validations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -167,7 +166,7 @@ namespace ConsoleApp1
                             ChairNumber = chairNumValRes.ValidatedResult
                         };
 
-                        student.Save();
+                        //student.Save();
 
                         if (student.Save())
                         {

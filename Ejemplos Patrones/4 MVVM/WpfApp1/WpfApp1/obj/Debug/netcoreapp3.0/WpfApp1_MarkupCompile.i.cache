@@ -1,5 +1,5 @@
 ﻿WpfApp1
-
+1.0.0.0
 
 winexe
 C#
@@ -12,7 +12,7 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_0
 C:\Users\dmany\Desktop\Troncal_Part 1\Ejemplos Patrones\4 MVVM\WpfApp1\WpfApp1\App.xaml
 41173229861
 
-1386173826
+14516957427
 192-1809656130
 MainWindow.xaml;Views\LoginView.xaml;Views\StudentsView.xaml;Views\SubjectsView.xaml;
 

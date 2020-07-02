@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1XX1VZzWDGxNGFM/DFOj/AMT/f93oWO8nztzQ5RMR0pHja45rjXa9tmkBIut1SA42idzue+pmY1FL5LChMdBfw==",
+  "dgSpecHash": "mra1fcqfKpUDkiRL0DLzsxiROU248SBMZOhUg64bQMeqlWyusBjed1WLbYYYmom/B1TDwsjFTR7gYRwABtz9ow==",
   "success": true,
   "projectFilePath": "C:\\Users\\dmany\\Desktop\\Troncal_Part 1\\4.2_OOP_Exercicis_Classes_Objectes\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\dmany\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

@@ -15,11 +15,6 @@ namespace Academy.Lib.Context
             return DbSet.Values.AsQueryable<T>();
         }
 
-        public T Find(Guid id)
-        {
-            return DbSet[id];
-        }
-
         public virtual SaveResult<T> Add(T entity)
         {
             var output = new SaveResult<T>();
